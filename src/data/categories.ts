@@ -1,0 +1,190 @@
+import { Category } from '../types';
+
+export const categories: Category[] = [
+  {
+    id: 'feelings-pain',
+    name: 'Feelings & Pain',
+    icon: '😊',
+    special: 'pain-scale',
+    items: [
+      { id: 'happy', text: 'Happy', icon: '😊' },
+      { id: 'sad', text: 'Sad', icon: '😢' },
+      { id: 'scared', text: 'Scared', icon: '😰' },
+      { id: 'tired', text: 'Tired', icon: '😴' },
+      { id: 'cold', text: 'Cold', icon: '🥶' },
+      { id: 'hot', text: 'Hot', icon: '🥵' },
+    ],
+    phrases: [
+      { id: 'feel-better', text: 'I feel better', icon: '👍' },
+      { id: 'feel-worse', text: 'I feel worse', icon: '👎' },
+      { id: 'in-pain', text: 'I am in pain', icon: '😣' },
+    ],
+  },
+  {
+    id: 'body-parts',
+    name: 'Body Parts',
+    icon: '🫀',
+    special: 'body-parts',
+    items: [
+      { id: 'head', text: 'Head', icon: '🧠' },
+      { id: 'throat', text: 'Throat', icon: '🗣️' },
+      { id: 'chest', text: 'Chest', icon: '🫁' },
+      { id: 'stomach', text: 'Stomach', icon: '🫃' },
+      { id: 'arm', text: 'Arm', icon: '💪' },
+      { id: 'leg', text: 'Leg', icon: '🦵' },
+    ],
+    phrases: [
+      { id: 'hurts-here', text: 'It hurts here', icon: '☝️' },
+      { id: 'numb', text: 'Feels numb', icon: '😶' },
+    ],
+  },
+  {
+    id: 'food-drink',
+    name: 'Food & Drink',
+    icon: '🍽️',
+    subcategories: [
+      {
+        id: 'fruits-vegetables',
+        name: 'Fruits & Vegetables',
+        icon: '🍎',
+        items: [
+          { id: 'apple', text: 'Apple', icon: '🍎' },
+          { id: 'banana', text: 'Banana', icon: '🍌' },
+          { id: 'orange', text: 'Orange', icon: '🍊' },
+          { id: 'carrot', text: 'Carrot', icon: '🥕' },
+          { id: 'broccoli', text: 'Broccoli', icon: '🥦' },
+        ],
+      },
+      {
+        id: 'cooked-food',
+        name: 'Cooked Food',
+        icon: '🍲',
+        items: [
+          { id: 'soup', text: 'Soup', icon: '🍲' },
+          { id: 'bread', text: 'Bread', icon: '🍞' },
+          { id: 'rice', text: 'Rice', icon: '🍚' },
+          { id: 'pasta', text: 'Pasta', icon: '🍝' },
+          { id: 'chicken', text: 'Chicken', icon: '🍗' },
+        ],
+      },
+      {
+        id: 'drinks',
+        name: 'Drinks',
+        icon: '🥤',
+        items: [
+          { id: 'water', text: 'Water', icon: '💧' },
+          { id: 'juice', text: 'Juice', icon: '🧃' },
+          { id: 'tea', text: 'Tea', icon: '🍵' },
+          { id: 'coffee', text: 'Coffee', icon: '☕' },
+          { id: 'milk', text: 'Milk', icon: '🥛' },
+        ],
+      },
+    ],
+    phrases: [
+      { id: 'hungry', text: 'I am hungry', icon: '🍽️' },
+      { id: 'thirsty', text: 'I am thirsty', icon: '💧' },
+    ],
+  },
+  {
+    id: 'daily-tasks',
+    name: 'Daily Tasks',
+    icon: '🛁',
+    items: [
+      { id: 'bathroom', text: 'Bathroom', icon: '🚽' },
+      { id: 'wash', text: 'Wash', icon: '🧼' },
+      { id: 'sleep', text: 'Sleep', icon: '😴' },
+      { id: 'tv', text: 'Watch TV', icon: '📺' },
+      { id: 'music', text: 'Music', icon: '🎵' },
+      { id: 'book', text: 'Read', icon: '📖' },
+    ],
+    phrases: [
+      { id: 'need-bathroom', text: 'I need the bathroom', icon: '🚽' },
+      { id: 'want-sleep', text: 'I want to sleep', icon: '😴' },
+    ],
+  },
+  {
+    id: 'time',
+    name: 'Time',
+    icon: '🕐',
+    special: 'time',
+    items: [
+      { id: 'now', text: 'Now', icon: '⏰' },
+      { id: 'later', text: 'Later', icon: '⏳' },
+      { id: 'morning', text: 'Morning', icon: '🌅' },
+      { id: 'afternoon', text: 'Afternoon', icon: '☀️' },
+      { id: 'evening', text: 'Evening', icon: '🌆' },
+      { id: 'night', text: 'Night', icon: '🌙' },
+    ],
+    phrases: [
+      { id: 'what-time', text: 'What time is it?', icon: '⏰' },
+      { id: 'when', text: 'When?', icon: '📅' },
+    ],
+  },
+  {
+    id: 'places',
+    name: 'Places',
+    icon: '🏠',
+    items: [
+      { id: 'bedroom', text: 'Bedroom', icon: '🛏️' },
+      { id: 'bathroom', text: 'Bathroom', icon: '🚿' },
+      { id: 'kitchen', text: 'Kitchen', icon: '👨‍🍳' },
+      { id: 'living-room', text: 'Living Room', icon: '🛋️' },
+      { id: 'outside', text: 'Outside', icon: '🌳' },
+      { id: 'hospital', text: 'Hospital', icon: '🏥' },
+    ],
+    phrases: [
+      { id: 'go-to', text: 'I want to go to', icon: '👉' },
+      { id: 'where', text: 'Where?', icon: '❓' },
+    ],
+  },
+  {
+    id: 'people',
+    name: 'People',
+    icon: '👥',
+    items: [
+      { id: 'doctor', text: 'Doctor', icon: '👨‍⚕️' },
+      { id: 'nurse', text: 'Nurse', icon: '👩‍⚕️' },
+      { id: 'family', text: 'Family', icon: '👨‍👩‍👧' },
+      { id: 'friend', text: 'Friend', icon: '👫' },
+      { id: 'alone', text: 'Alone', icon: '🚶' },
+    ],
+    phrases: [
+      { id: 'call-someone', text: 'Call someone', icon: '📞' },
+      { id: 'want-see', text: 'I want to see', icon: '👀' },
+    ],
+  },
+  {
+    id: 'objects',
+    name: 'Objects',
+    icon: '📱',
+    items: [
+      { id: 'phone', text: 'Phone', icon: '📱' },
+      { id: 'tablet', text: 'Tablet', icon: '📱' },
+      { id: 'glasses', text: 'Glasses', icon: '👓' },
+      { id: 'remote', text: 'Remote', icon: '📺' },
+      { id: 'blanket', text: 'Blanket', icon: '🛏️' },
+      { id: 'pillow', text: 'Pillow', icon: '🛌' },
+    ],
+    phrases: [
+      { id: 'need-this', text: 'I need this', icon: '☝️' },
+      { id: 'where-is', text: 'Where is?', icon: '❓' },
+    ],
+  },
+  {
+    id: 'questions',
+    name: 'Questions',
+    icon: '❓',
+    items: [
+      { id: 'what', text: 'What?', icon: '❓' },
+      { id: 'when', text: 'When?', icon: '⏰' },
+      { id: 'where', text: 'Where?', icon: '📍' },
+      { id: 'who', text: 'Who?', icon: '👤' },
+      { id: 'why', text: 'Why?', icon: '🤔' },
+      { id: 'how', text: 'How?', icon: '💭' },
+    ],
+    phrases: [
+      { id: 'understand', text: 'I understand', icon: '✅' },
+      { id: 'dont-understand', text: "I don't understand", icon: '❌' },
+    ],
+  },
+];
