@@ -1,0 +1,9 @@
+vcs:
+  type: git
+agents:
+  available:
+  - claude
+  selection:
+    preferred_implementer: claude
+    preferred_reviewer: claude
+  auto_commit: true
