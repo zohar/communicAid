@@ -1,0 +1,39 @@
+schema_version: 1.0.0
+mission: software-dev
+profile: comprehensive
+answers:
+  project_intent: Tablet-first assistive communication SPA for post-surgery
+    patients who temporarily cannot speak. Enables non-verbal communication with
+    caregivers through tap-based category grids (feelings, pain scale, body parts,
+    food, daily tasks, people, places, objects, questions). Users may be
+    cognitively slowed by sedatives so the UI must be extremely simple, high
+    contrast, and require minimal mental effort. Large touch targets, emoji-based
+    icons, and minimal navigation depth.
+  languages_frameworks: TypeScript 6, React 19, Vite 8, Tailwind CSS 4,
+    lucide-react for icons. Supabase (PostgreSQL) for backend data persistence
+    and auth. No external state management — React hooks only.
+  testing_requirements: Vitest for unit/integration tests, Playwright for e2e.
+    Coverage target 80%+. Test accessibility (a11y) on all interactive components.
+    No test framework installed yet — to be set up.
+  quality_gates: Tests pass, ESLint clean, TypeScript strict mode, no unresolved
+    review findings, Lighthouse accessibility score 90+.
+  review_policy: At least one focused reviewer approves before merge.
+  performance_targets: First contentful paint under 2s on mobile 3G. Bundle size
+    kept minimal — code-split aggressively. Touch targets minimum 48px
+    (currently 70-90px on category tiles).
+  deployment_constraints: Deployable to Netlify and/or Coolify. SPA with static
+    build output via Vite.
+  documentation_policy: Keep README current with setup instructions and
+    architecture overview. Document accessibility design decisions.
+  risk_boundaries: Never expose Supabase service-role keys in frontend code.
+    All data access must go through RLS policies. Patient data is sensitive —
+    no analytics or third-party tracking without explicit consent.
+  amendment_process: Amendments proposed by PR and reviewed before adoption.
+  exception_policy: Exceptions must include rationale and expiration criteria.
+selected_paradigms:
+- test-first
+selected_directives:
+- TEST_FIRST
+available_tools:
+- git
+- spec-kitty
