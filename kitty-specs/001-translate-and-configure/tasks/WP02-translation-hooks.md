@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: Translation Hooks
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - C-05
@@ -11,7 +11,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 774245b1b8e5e6050e286c90df1626c5524b4c87
+created_at: '2026-04-08T13:42:49.962758+00:00'
 subtasks: [T007, T008, T009, T010]
+shell_pid: "75646"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
