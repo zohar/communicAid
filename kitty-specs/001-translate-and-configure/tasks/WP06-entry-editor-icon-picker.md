@@ -1,7 +1,7 @@
 ---
 work_package_id: WP06
 title: Entry Editor & Icon Picker
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - C-03
@@ -12,7 +12,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 702706a3e164f8315b94e249042072ad87e7490a
+created_at: '2026-04-08T13:53:16.050188+00:00'
 subtasks: [T027, T028, T029, T030, T031]
+shell_pid: "81426"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
