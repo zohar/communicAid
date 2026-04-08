@@ -5,6 +5,7 @@ import { LanguagePicker } from '../config/LanguagePicker';
 import { CategoryEditor } from '../config/CategoryEditor';
 import { EntryEditor } from '../config/EntryEditor';
 import { IconPicker } from '../config/IconPicker';
+import { ResetButton } from '../config/ResetButton';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useOverrides } from '../../hooks/useOverrides';
 
@@ -24,7 +25,7 @@ export function ConfigScreen({ categories }: ConfigScreenProps) {
   const [view, setView] = useState<ConfigView>({ mode: 'main' });
 
   const activeCategoryId = view.mode !== 'main' ? view.category.id : '';
-  const { setOverride } = useOverrides(activeCategoryId);
+  const { setOverride, resetCategory } = useOverrides(activeCategoryId);
 
   if (view.mode === 'icon') {
     return (
@@ -73,6 +74,7 @@ export function ConfigScreen({ categories }: ConfigScreenProps) {
             setView({ mode: 'entry', category: view.category, entryId, text, icon });
           }}
         />
+        <ResetButton onReset={resetCategory} />
       </div>
     );
   }
