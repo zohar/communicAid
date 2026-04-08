@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: Configuration Screen & Language Picker
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - FR-03
@@ -11,7 +11,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: a479e6575f61d731bf7410a10f2e9bcbd2319d05
+created_at: '2026-04-08T13:51:10.482873+00:00'
 subtasks: [T023, T024, T025, T026]
+shell_pid: "80167"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
