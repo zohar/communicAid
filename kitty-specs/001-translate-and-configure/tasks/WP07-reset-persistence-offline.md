@@ -1,7 +1,7 @@
 ---
 work_package_id: WP07
 title: Reset, Persistence & Offline
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-09
@@ -17,8 +17,8 @@ base_branch: translate-and-configure
 base_commit: 4d71a0c52e48d948f634aed39c6981be7bf3d0c8
 created_at: '2026-04-08T14:00:14.516717+00:00'
 subtasks: [T032, T033, T034, T035, T036]
-shell_pid: "83737"
-agent: "claude"
+agent: claude
+shell_pid: '83737'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -222,3 +222,4 @@ This is the polish phase. The core translation and editing functionality is comp
 ## Activity Log
 
 - 2026-04-08T14:00:14Z – claude – shell_pid=83737 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T14:04:26Z – claude – shell_pid=83737 – lane=for_review – Reset button, RTL flash prevention, persistence verified, all WPs complete

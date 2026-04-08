@@ -1,15 +1,15 @@
 {
-  "event_count": 12,
+  "event_count": 14,
   "feature_slug": "001-translate-and-configure",
-  "last_event_id": "01KNPP9BBGTGBJAAAPFQBAHDQ9",
-  "materialized_at": "2026-04-08T14:00:07.792638+00:00",
+  "last_event_id": "01KNPPH7GBTYM3CG13N4E0PV5P",
+  "materialized_at": "2026-04-08T14:04:25.995565+00:00",
   "summary": {
     "approved": 0,
     "blocked": 0,
     "canceled": 0,
     "claimed": 0,
     "done": 0,
-    "for_review": 6,
+    "for_review": 7,
     "in_progress": 0,
     "planned": 0
   },
@@ -55,6 +55,13 @@
       "lane": "for_review",
       "last_event_id": "01KNPP9BBGTGBJAAAPFQBAHDQ9",
       "last_transition_at": "2026-04-08T14:00:07.792421+00:00"
+    },
+    "WP07": {
+      "actor": "user",
+      "force_count": 1,
+      "lane": "for_review",
+      "last_event_id": "01KNPPH7GBTYM3CG13N4E0PV5P",
+      "last_transition_at": "2026-04-08T14:04:25.995308+00:00"
     }
   }
 }
