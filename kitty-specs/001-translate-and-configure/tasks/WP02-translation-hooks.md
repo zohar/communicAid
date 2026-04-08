@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: Translation Hooks
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - C-05
@@ -15,8 +15,8 @@ base_branch: translate-and-configure
 base_commit: 774245b1b8e5e6050e286c90df1626c5524b4c87
 created_at: '2026-04-08T13:42:49.962758+00:00'
 subtasks: [T007, T008, T009, T010]
-shell_pid: "75646"
-agent: "claude"
+agent: claude
+shell_pid: '75646'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -327,3 +327,4 @@ Implement the three custom React hooks (`useLanguage`, `useTranslation`, `useOve
 ## Activity Log
 
 - 2026-04-08T13:42:50Z – claude – shell_pid=75646 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T13:45:02Z – claude – shell_pid=75646 – lane=for_review – Translation hooks complete: useLanguage, useTranslation, useOverrides, resolveEntry

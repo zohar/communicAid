@@ -227,4 +227,5 @@ WP01 (Translation Data Layer)
 <!-- status-model:start -->
 ## Canonical Status (Generated)
 - WP01: for_review
+- WP02: for_review
 <!-- status-model:end -->
