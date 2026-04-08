@@ -17,6 +17,7 @@ base_commit: 702706a3e164f8315b94e249042072ad87e7490a
 created_at: '2026-04-08T13:53:16.050188+00:00'
 subtasks: [T027, T028, T029, T030, T031]
 shell_pid: "81426"
+agent: "claude"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -248,3 +249,7 @@ Edits are saved via `useOverrides` hook (from WP02) which persists to localStora
 - Check that edits survive page reload
 - Verify quick-name edits appear in the action bar immediately
 - Test editing with Hebrew selected (RTL text input)
+
+## Activity Log
+
+- 2026-04-08T13:53:16Z – claude – shell_pid=81426 – lane=doing – Assigned agent via workflow command
