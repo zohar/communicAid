@@ -6,6 +6,7 @@ import { HomeScreen } from './components/screens/HomeScreen';
 import { CategoryScreen } from './components/screens/CategoryScreen';
 import { categories } from './data/categories';
 import { Category, RecentItem, QuickName } from './types';
+import { useLanguage } from './hooks/useLanguage';
 
 type NavigationState = {
   screen: 'home' | 'category';
@@ -14,6 +15,8 @@ type NavigationState = {
 };
 
 function App() {
+  useLanguage(); // Sets dir and lang attributes on <html>
+
   const [navigation, setNavigation] = useState<NavigationState>({
     screen: 'home',
     breadcrumb: ['Home'],

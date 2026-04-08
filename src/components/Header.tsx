@@ -51,7 +51,7 @@ export function Header({ title, onBack, onHome }: HeaderProps) {
 
         <h1 className="text-3xl font-bold text-center flex-1">{title}</h1>
 
-        <div className="text-right min-w-[180px]">
+        <div className="text-end min-w-[180px]">
           <div className="text-3xl font-bold">{formatTime(currentTime)}</div>
           <div className="text-lg text-slate-300">{formatDate(currentTime)}</div>
         </div>
