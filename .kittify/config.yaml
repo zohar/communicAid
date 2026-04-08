@@ -7,3 +7,7 @@ agents:
     preferred_implementer: claude
     preferred_reviewer: claude
   auto_commit: true
+project:
+  uuid: abb1990d-993b-4c82-91e9-319ab1b624ca
+  slug: communicaid
+  node_id: 303524425ee9

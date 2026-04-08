@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Translation Data Layer
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - C-01
@@ -11,7 +11,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 09141879d84212cd398515b08203010916da4eec
+created_at: '2026-04-08T13:38:27.084748+00:00'
 subtasks: [T001, T002, T003, T004, T005, T006]
+shell_pid: "73443"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
