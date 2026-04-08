@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Dual-Language Display
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - FR-03
@@ -10,7 +10,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 613e09875d1aa1edd3df04835842d47c28eafec5
+created_at: '2026-04-08T13:47:38.592092+00:00'
 subtasks: [T015, T016, T017, T018, T019, T020, T021, T022]
+shell_pid: "78730"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
