@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: RTL Support
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - FR-06
@@ -9,7 +9,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 5c38132e00ef2c9da8edd21d416e2b2968d7dfb6
+created_at: '2026-04-08T13:45:08.350105+00:00'
 subtasks: [T011, T012, T013, T014]
+shell_pid: "77528"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
