@@ -1,7 +1,7 @@
 ---
 work_package_id: WP06
 title: Entry Editor & Icon Picker
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - C-03
@@ -16,8 +16,8 @@ base_branch: translate-and-configure
 base_commit: 702706a3e164f8315b94e249042072ad87e7490a
 created_at: '2026-04-08T13:53:16.050188+00:00'
 subtasks: [T027, T028, T029, T030, T031]
-shell_pid: "81426"
-agent: "claude"
+agent: claude
+shell_pid: '81426'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -253,3 +253,4 @@ Edits are saved via `useOverrides` hook (from WP02) which persists to localStora
 ## Activity Log
 
 - 2026-04-08T13:53:16Z – claude – shell_pid=81426 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T14:00:07Z – claude – shell_pid=81426 – lane=for_review – Entry editor, icon picker, and full category editing flow complete
