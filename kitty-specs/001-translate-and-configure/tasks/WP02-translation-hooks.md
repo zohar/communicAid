@@ -16,6 +16,7 @@ base_commit: 774245b1b8e5e6050e286c90df1626c5524b4c87
 created_at: '2026-04-08T13:42:49.962758+00:00'
 subtasks: [T007, T008, T009, T010]
 shell_pid: "75646"
+agent: "claude"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -322,3 +323,7 @@ Implement the three custom React hooks (`useLanguage`, `useTranslation`, `useOve
 - Check that `useLanguage` sets both `dir` and `lang` on `document.documentElement`
 - Verify `resolveEntry` fallback chain: override → language translation → English translation → entry ID
 - Confirm `resetCategory` correctly walks the category tree (including subcategory items)
+
+## Activity Log
+
+- 2026-04-08T13:42:50Z – claude – shell_pid=75646 – lane=doing – Assigned agent via workflow command
