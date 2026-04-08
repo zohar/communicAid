@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Dual-Language Display
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-03
@@ -14,8 +14,8 @@ base_branch: translate-and-configure
 base_commit: 613e09875d1aa1edd3df04835842d47c28eafec5
 created_at: '2026-04-08T13:47:38.592092+00:00'
 subtasks: [T015, T016, T017, T018, T019, T020, T021, T022]
-shell_pid: "78730"
-agent: "claude"
+agent: claude
+shell_pid: '78730'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -306,3 +306,4 @@ After WP01-WP03, the translation data, hooks, and RTL support are in place. This
 ## Activity Log
 
 - 2026-04-08T13:47:38Z – claude – shell_pid=78730 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T13:51:05Z – claude – shell_pid=78730 – lane=for_review – Dual-language display complete: all components wired with translation hooks
