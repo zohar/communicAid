@@ -16,6 +16,7 @@ base_commit: a479e6575f61d731bf7410a10f2e9bcbd2319d05
 created_at: '2026-04-08T13:51:10.482873+00:00'
 subtasks: [T023, T024, T025, T026]
 shell_pid: "80167"
+agent: "claude"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -209,3 +210,7 @@ The config screen is the caregiver's interface for setting up the device. It mus
 - Test the language switch flow: EN→HE, EN→AR, HE→EN, AR→EN, HE→AR
 - Check that the config screen follows the same visual style as communication screens
 - Verify back/home navigation works from config screen in all scenarios
+
+## Activity Log
+
+- 2026-04-08T13:51:10Z – claude – shell_pid=80167 – lane=doing – Assigned agent via workflow command
