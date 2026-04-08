@@ -14,6 +14,7 @@ base_commit: 5c38132e00ef2c9da8edd21d416e2b2968d7dfb6
 created_at: '2026-04-08T13:45:08.350105+00:00'
 subtasks: [T011, T012, T013, T014]
 shell_pid: "77528"
+agent: "claude"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -182,3 +183,7 @@ Tailwind CSS 4 supports logical properties natively. The HTML `dir="rtl"` attrib
 - Pay special attention to the Header (buttons should swap sides)
 - Verify the pain scale numbers still make sense in RTL (1 on right, 10 on left)
 - Check that grid layouts flow naturally (RTL grids fill from right)
+
+## Activity Log
+
+- 2026-04-08T13:45:08Z – claude – shell_pid=77528 – lane=doing – Assigned agent via workflow command
