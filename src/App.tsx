@@ -137,9 +137,7 @@ function App() {
         {navigation.screen === 'config' && (
           <ConfigScreen
             categories={categories}
-            onCategoryEdit={() => {
-              // Placeholder for WP06 — category editing
-            }}
+            onCategoryEdit={() => {}}
           />
         )}
       </div>
