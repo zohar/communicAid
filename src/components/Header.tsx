@@ -1,13 +1,14 @@
-import { Home, ArrowLeft } from 'lucide-react';
+import { Home, ArrowLeft, Settings } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 interface HeaderProps {
   title: string;
   onBack?: () => void;
   onHome: () => void;
+  onSettings: () => void;
 }
 
-export function Header({ title, onBack, onHome }: HeaderProps) {
+export function Header({ title, onBack, onHome, onSettings }: HeaderProps) {
   const [currentTime, setCurrentTime] = useState(new Date());
 
   useEffect(() => {
@@ -51,9 +52,17 @@ export function Header({ title, onBack, onHome }: HeaderProps) {
 
         <h1 className="text-3xl font-bold text-center flex-1">{title}</h1>
 
-        <div className="text-end min-w-[180px]">
-          <div className="text-3xl font-bold">{formatTime(currentTime)}</div>
-          <div className="text-lg text-slate-300">{formatDate(currentTime)}</div>
+        <div className="flex items-center gap-3">
+          <div className="text-end min-w-[180px]">
+            <div className="text-3xl font-bold">{formatTime(currentTime)}</div>
+            <div className="text-lg text-slate-300">{formatDate(currentTime)}</div>
+          </div>
+          <button
+            onClick={onSettings}
+            className="bg-slate-700 hover:bg-slate-600 active:bg-slate-500 p-4 rounded-xl flex items-center justify-center transition-all shadow-md min-w-[70px] min-h-[70px]"
+          >
+            <Settings size={32} />
+          </button>
         </div>
       </div>
     </div>

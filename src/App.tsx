@@ -4,6 +4,7 @@ import { ActionBar } from './components/ActionBar';
 import { RecentItems } from './components/RecentItems';
 import { HomeScreen } from './components/screens/HomeScreen';
 import { CategoryScreen } from './components/screens/CategoryScreen';
+import { ConfigScreen } from './components/screens/ConfigScreen';
 import { categories } from './data/categories';
 import { Category, RecentItem, QuickName } from './types';
 import { useLanguage } from './hooks/useLanguage';
@@ -93,6 +94,13 @@ function App() {
     });
   };
 
+  const handleSettings = () => {
+    setNavigation({
+      screen: 'config',
+      breadcrumbIds: [...navigation.breadcrumbIds, 'settings'],
+    });
+  };
+
   const currentTitleId = navigation.breadcrumbIds[navigation.breadcrumbIds.length - 1];
   const currentTitle = t(currentTitleId);
 
@@ -102,6 +110,7 @@ function App() {
         title={currentTitle}
         onBack={navigation.breadcrumbIds.length > 1 ? handleBack : undefined}
         onHome={handleHome}
+        onSettings={handleSettings}
       />
 
       {selectedMessage && (
@@ -122,6 +131,15 @@ function App() {
             category={navigation.category}
             onItemTap={handleItemTap}
             onSubcategorySelect={handleSubcategorySelect}
+          />
+        )}
+
+        {navigation.screen === 'config' && (
+          <ConfigScreen
+            categories={categories}
+            onCategoryEdit={() => {
+              // Placeholder for WP06 — category editing
+            }}
           />
         )}
       </div>
