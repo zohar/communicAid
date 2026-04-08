@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Translation Data Layer
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - C-01
@@ -15,8 +15,8 @@ base_branch: translate-and-configure
 base_commit: 09141879d84212cd398515b08203010916da4eec
 created_at: '2026-04-08T13:38:27.084748+00:00'
 subtasks: [T001, T002, T003, T004, T005, T006]
-shell_pid: "73443"
-agent: "claude"
+agent: claude
+shell_pid: '73443'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -345,3 +345,4 @@ Create the type system and translation dictionaries that all other work packages
 ## Activity Log
 
 - 2026-04-08T13:38:27Z – claude – shell_pid=73443 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T13:41:57Z – claude – shell_pid=73443 – lane=for_review – Ready for review: Translation data layer complete with EN/HE/AR dictionaries, types, and deduplicated entry IDs

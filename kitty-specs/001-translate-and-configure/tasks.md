@@ -223,3 +223,8 @@ WP01 (Translation Data Layer)
 **WP01–WP05** = Usable product: language can be selected from config screen, all screens display translations.
 
 **WP01–WP07** = Full feature: editing, icon picker, reset, persistence, offline.
+
+<!-- status-model:start -->
+## Canonical Status (Generated)
+- WP01: for_review
+<!-- status-model:end -->
