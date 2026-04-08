@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: Configuration Screen & Language Picker
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-03
@@ -15,8 +15,8 @@ base_branch: translate-and-configure
 base_commit: a479e6575f61d731bf7410a10f2e9bcbd2319d05
 created_at: '2026-04-08T13:51:10.482873+00:00'
 subtasks: [T023, T024, T025, T026]
-shell_pid: "80167"
-agent: "claude"
+agent: claude
+shell_pid: '80167'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -214,3 +214,4 @@ The config screen is the caregiver's interface for setting up the device. It mus
 ## Activity Log
 
 - 2026-04-08T13:51:10Z – claude – shell_pid=80167 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T13:53:10Z – claude – shell_pid=80167 – lane=for_review – Config screen with language picker and settings button
