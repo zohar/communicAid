@@ -1,7 +1,7 @@
 ---
 work_package_id: WP07
 title: Reset, Persistence & Offline
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - FR-09
@@ -13,7 +13,11 @@ requirement_refs:
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
 branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
+base_branch: translate-and-configure
+base_commit: 4d71a0c52e48d948f634aed39c6981be7bf3d0c8
+created_at: '2026-04-08T14:00:14.516717+00:00'
 subtasks: [T032, T033, T034, T035, T036]
+shell_pid: "83737"
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
