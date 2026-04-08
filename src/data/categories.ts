@@ -90,9 +90,9 @@ export const categories: Category[] = [
     name: 'Daily Tasks',
     icon: '🛁',
     items: [
-      { id: 'bathroom', text: 'Bathroom', icon: '🚽' },
+      { id: 'daily-bathroom', text: 'Bathroom', icon: '🚽' },
       { id: 'wash', text: 'Wash', icon: '🧼' },
-      { id: 'sleep', text: 'Sleep', icon: '😴' },
+      { id: 'daily-sleep', text: 'Sleep', icon: '😴' },
       { id: 'tv', text: 'Watch TV', icon: '📺' },
       { id: 'music', text: 'Music', icon: '🎵' },
       { id: 'book', text: 'Read', icon: '📖' },
@@ -117,7 +117,7 @@ export const categories: Category[] = [
     ],
     phrases: [
       { id: 'what-time', text: 'What time is it?', icon: '⏰' },
-      { id: 'when', text: 'When?', icon: '📅' },
+      { id: 'time-when', text: 'When?', icon: '📅' },
     ],
   },
   {
@@ -126,7 +126,7 @@ export const categories: Category[] = [
     icon: '🏠',
     items: [
       { id: 'bedroom', text: 'Bedroom', icon: '🛏️' },
-      { id: 'bathroom', text: 'Bathroom', icon: '🚿' },
+      { id: 'places-bathroom', text: 'Bathroom', icon: '🚿' },
       { id: 'kitchen', text: 'Kitchen', icon: '👨‍🍳' },
       { id: 'living-room', text: 'Living Room', icon: '🛋️' },
       { id: 'outside', text: 'Outside', icon: '🌳' },
@@ -134,7 +134,7 @@ export const categories: Category[] = [
     ],
     phrases: [
       { id: 'go-to', text: 'I want to go to', icon: '👉' },
-      { id: 'where', text: 'Where?', icon: '❓' },
+      { id: 'places-where', text: 'Where?', icon: '❓' },
     ],
   },
   {
@@ -175,12 +175,12 @@ export const categories: Category[] = [
     name: 'Questions',
     icon: '❓',
     items: [
-      { id: 'what', text: 'What?', icon: '❓' },
-      { id: 'when', text: 'When?', icon: '⏰' },
-      { id: 'where', text: 'Where?', icon: '📍' },
-      { id: 'who', text: 'Who?', icon: '👤' },
-      { id: 'why', text: 'Why?', icon: '🤔' },
-      { id: 'how', text: 'How?', icon: '💭' },
+      { id: 'questions-what', text: 'What?', icon: '❓' },
+      { id: 'questions-when', text: 'When?', icon: '⏰' },
+      { id: 'questions-where', text: 'Where?', icon: '📍' },
+      { id: 'questions-who', text: 'Who?', icon: '👤' },
+      { id: 'questions-why', text: 'Why?', icon: '🤔' },
+      { id: 'questions-how', text: 'How?', icon: '💭' },
     ],
     phrases: [
       { id: 'understand', text: 'I understand', icon: '✅' },

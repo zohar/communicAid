@@ -1,3 +1,23 @@
+export type Language = 'en' | 'he' | 'ar';
+
+export interface LanguageConfig {
+  code: Language;
+  name: string;
+  dir: 'ltr' | 'rtl';
+  isRTL: boolean;
+}
+
+export interface TranslationDictionary {
+  [entryId: string]: string;
+}
+
+export interface CustomOverride {
+  entryId: string;
+  language: Language;
+  text?: string;
+  icon?: string;
+}
+
 export interface Category {
   id: string;
   name: string;
@@ -21,6 +41,7 @@ export interface Phrase {
 }
 
 export interface RecentItem {
+  entryId?: string;
   text: string;
   icon: string;
   tappedAt: Date;
