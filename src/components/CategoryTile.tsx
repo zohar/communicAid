@@ -1,10 +1,11 @@
 interface CategoryTileProps {
   name: string;
+  subtitle?: string | null;
   icon: string;
   onClick: () => void;
 }
 
-export function CategoryTile({ name, icon, onClick }: CategoryTileProps) {
+export function CategoryTile({ name, subtitle, icon, onClick }: CategoryTileProps) {
   return (
     <button
       onClick={onClick}
@@ -14,6 +15,11 @@ export function CategoryTile({ name, icon, onClick }: CategoryTileProps) {
       <span className="text-2xl font-bold text-slate-800 text-center leading-tight">
         {name}
       </span>
+      {subtitle && (
+        <span className="text-sm text-slate-500 text-center leading-tight">
+          {subtitle}
+        </span>
+      )}
     </button>
   );
 }

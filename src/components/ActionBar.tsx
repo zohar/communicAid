@@ -1,4 +1,5 @@
 import { QuickName } from '../types';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface ActionBarProps {
   quickNames: QuickName[];
@@ -6,30 +7,39 @@ interface ActionBarProps {
 }
 
 export function ActionBar({ quickNames, onItemTap }: ActionBarProps) {
+  const { t, tEn } = useTranslation();
+
   const permanentActions = [
-    { text: 'Yes', icon: '✅' },
-    { text: 'No', icon: '❌' },
-    { text: 'Help', icon: '🆘' },
-    { text: 'I Want', icon: '👍' },
-    { text: "I Don't Want", icon: '👎' },
-    { text: 'Stop', icon: '🛑' },
-    { text: 'More', icon: '➕' },
-    { text: 'Less', icon: '➖' },
+    { id: 'action-yes', icon: '✅' },
+    { id: 'action-no', icon: '❌' },
+    { id: 'action-help', icon: '🆘' },
+    { id: 'action-i-want', icon: '👍' },
+    { id: 'action-i-dont-want', icon: '👎' },
+    { id: 'action-stop', icon: '🛑' },
+    { id: 'action-more', icon: '➕' },
+    { id: 'action-less', icon: '➖' },
   ];
 
   return (
     <div className="bg-slate-800 border-t-4 border-slate-700 p-3 shadow-lg">
       <div className="grid grid-cols-4 gap-3 mb-3">
-        {permanentActions.map((action) => (
-          <button
-            key={action.text}
-            onClick={() => onItemTap(action.text, action.icon)}
-            className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-xl p-4 flex flex-col items-center justify-center gap-2 transition-all shadow-md min-h-[90px] text-lg font-bold"
-          >
-            <span className="text-4xl">{action.icon}</span>
-            <span className="text-sm leading-tight">{action.text}</span>
-          </button>
-        ))}
+        {permanentActions.map((action) => {
+          const text = t(action.id);
+          const subtitle = tEn(action.id);
+          return (
+            <button
+              key={action.id}
+              onClick={() => onItemTap(text, action.icon)}
+              className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-xl p-4 flex flex-col items-center justify-center gap-1 transition-all shadow-md min-h-[90px] text-lg font-bold"
+            >
+              <span className="text-4xl">{action.icon}</span>
+              <span className="text-sm leading-tight">{text}</span>
+              {subtitle && (
+                <span className="text-[10px] leading-tight opacity-70">{subtitle}</span>
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {quickNames.length > 0 && (

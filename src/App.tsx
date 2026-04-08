@@ -7,19 +7,21 @@ import { CategoryScreen } from './components/screens/CategoryScreen';
 import { categories } from './data/categories';
 import { Category, RecentItem, QuickName } from './types';
 import { useLanguage } from './hooks/useLanguage';
+import { useTranslation } from './hooks/useTranslation';
 
 type NavigationState = {
-  screen: 'home' | 'category';
+  screen: 'home' | 'category' | 'config';
   category?: Category;
-  breadcrumb: string[];
+  breadcrumbIds: string[];
 };
 
 function App() {
   useLanguage(); // Sets dir and lang attributes on <html>
+  const { t } = useTranslation();
 
   const [navigation, setNavigation] = useState<NavigationState>({
     screen: 'home',
-    breadcrumb: ['Home'],
+    breadcrumbIds: ['home'],
   });
 
   const [recentItems, setRecentItems] = useState<RecentItem[]>([]);
@@ -32,8 +34,9 @@ function App() {
 
   const [selectedMessage, setSelectedMessage] = useState<string>('');
 
-  const handleItemTap = (text: string, icon: string) => {
+  const handleItemTap = (text: string, icon: string, entryId?: string) => {
     const newItem: RecentItem = {
+      entryId,
       text,
       icon,
       tappedAt: new Date(),
@@ -48,7 +51,7 @@ function App() {
     setNavigation({
       screen: 'category',
       category,
-      breadcrumb: [...navigation.breadcrumb, category.name],
+      breadcrumbIds: [...navigation.breadcrumbIds, category.id],
     });
   };
 
@@ -56,27 +59,27 @@ function App() {
     setNavigation({
       screen: 'category',
       category: subcategory,
-      breadcrumb: [...navigation.breadcrumb, subcategory.name],
+      breadcrumbIds: [...navigation.breadcrumbIds, subcategory.id],
     });
   };
 
   const handleBack = () => {
-    if (navigation.breadcrumb.length > 1) {
-      const newBreadcrumb = navigation.breadcrumb.slice(0, -1);
-      const lastCrumb = newBreadcrumb[newBreadcrumb.length - 1];
+    if (navigation.breadcrumbIds.length > 1) {
+      const newBreadcrumbIds = navigation.breadcrumbIds.slice(0, -1);
+      const lastId = newBreadcrumbIds[newBreadcrumbIds.length - 1];
 
-      if (lastCrumb === 'Home') {
+      if (lastId === 'home') {
         setNavigation({
           screen: 'home',
-          breadcrumb: newBreadcrumb,
+          breadcrumbIds: newBreadcrumbIds,
         });
       } else {
-        const parentCategory = categories.find((c) => c.name === lastCrumb);
+        const parentCategory = categories.find((c) => c.id === lastId);
         if (parentCategory) {
           setNavigation({
             screen: 'category',
             category: parentCategory,
-            breadcrumb: newBreadcrumb,
+            breadcrumbIds: newBreadcrumbIds,
           });
         }
       }
@@ -86,17 +89,18 @@ function App() {
   const handleHome = () => {
     setNavigation({
       screen: 'home',
-      breadcrumb: ['Home'],
+      breadcrumbIds: ['home'],
     });
   };
 
-  const currentTitle = navigation.breadcrumb[navigation.breadcrumb.length - 1];
+  const currentTitleId = navigation.breadcrumbIds[navigation.breadcrumbIds.length - 1];
+  const currentTitle = t(currentTitleId);
 
   return (
     <div className="min-h-screen bg-slate-200 flex flex-col">
       <Header
         title={currentTitle}
-        onBack={navigation.breadcrumb.length > 1 ? handleBack : undefined}
+        onBack={navigation.breadcrumbIds.length > 1 ? handleBack : undefined}
         onHome={handleHome}
       />
 

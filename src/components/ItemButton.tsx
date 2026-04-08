@@ -1,11 +1,12 @@
 interface ItemButtonProps {
   text: string;
+  subtitle?: string | null;
   icon: string;
   onClick: () => void;
   variant?: 'default' | 'phrase';
 }
 
-export function ItemButton({ text, icon, onClick, variant = 'default' }: ItemButtonProps) {
+export function ItemButton({ text, subtitle, icon, onClick, variant = 'default' }: ItemButtonProps) {
   const baseClasses = "rounded-xl p-5 flex flex-col items-center justify-center gap-3 transition-all shadow-lg min-h-[140px] font-bold border-4";
 
   const variantClasses = variant === 'phrase'
@@ -19,6 +20,11 @@ export function ItemButton({ text, icon, onClick, variant = 'default' }: ItemBut
     >
       <span className="text-5xl">{icon}</span>
       <span className="text-xl text-center leading-tight">{text}</span>
+      {subtitle && (
+        <span className={`text-xs text-center leading-tight ${variant === 'phrase' ? 'opacity-70' : 'text-slate-500'}`}>
+          {subtitle}
+        </span>
+      )}
     </button>
   );
 }
