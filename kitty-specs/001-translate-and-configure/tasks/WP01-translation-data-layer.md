@@ -10,7 +10,7 @@ requirement_refs:
 - FR-02
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
-branch_strategy: No dependencies — branch from translate-and-configure
+branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
 subtasks: [T001, T002, T003, T004, T005, T006]
 history:
 - timestamp: '2026-04-08T13:22:32Z'

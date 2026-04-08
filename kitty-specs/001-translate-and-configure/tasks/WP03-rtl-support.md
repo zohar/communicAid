@@ -2,13 +2,13 @@
 work_package_id: WP03
 title: RTL Support
 lane: planned
-dependencies: [WP02]
+dependencies: []
 requirement_refs:
 - FR-06
 - NFR-04
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
-branch_strategy: 'Depends on WP02 — use: spec-kitty implement WP03 --base WP02'
+branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
 subtasks: [T011, T012, T013, T014]
 history:
 - timestamp: '2026-04-08T13:22:32Z'

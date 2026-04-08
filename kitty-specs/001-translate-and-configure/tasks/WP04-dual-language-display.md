@@ -2,14 +2,14 @@
 work_package_id: WP04
 title: Dual-Language Display
 lane: planned
-dependencies: [WP02, WP03]
+dependencies: []
 requirement_refs:
 - FR-03
 - FR-04
 - FR-05
 planning_base_branch: translate-and-configure
 merge_target_branch: translate-and-configure
-branch_strategy: 'Depends on WP02 and WP03 — use: spec-kitty implement WP04 --base WP03'
+branch_strategy: Planning artifacts for this feature were generated on translate-and-configure. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into translate-and-configure unless the human explicitly redirects the landing branch.
 subtasks: [T015, T016, T017, T018, T019, T020, T021, T022]
 history:
 - timestamp: '2026-04-08T13:22:32Z'
