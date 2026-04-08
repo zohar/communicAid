@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: RTL Support
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-06
@@ -13,8 +13,8 @@ base_branch: translate-and-configure
 base_commit: 5c38132e00ef2c9da8edd21d416e2b2968d7dfb6
 created_at: '2026-04-08T13:45:08.350105+00:00'
 subtasks: [T011, T012, T013, T014]
-shell_pid: "77528"
-agent: "claude"
+agent: claude
+shell_pid: '77528'
 history:
 - timestamp: '2026-04-08T13:22:32Z'
   action: created
@@ -187,3 +187,4 @@ Tailwind CSS 4 supports logical properties natively. The HTML `dir="rtl"` attrib
 ## Activity Log
 
 - 2026-04-08T13:45:08Z – claude – shell_pid=77528 – lane=doing – Assigned agent via workflow command
+- 2026-04-08T13:47:32Z – claude – shell_pid=77528 – lane=for_review – RTL support: migrated directional classes, wired dir attribute
