@@ -35,11 +35,11 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 
 ### Included Subtasks
 
-- [ ] T001 Install devDependencies: `vitest`, `@testing-library/react`, `@testing-library/user-event`, `@testing-library/jest-dom`, `jsdom`, `@vitest/ui` (package.json)
-- [ ] T002 Create `vitest.config.ts` at repo root with jsdom environment, CSS support, and setup file reference
-- [ ] T003 Create `tests/setup.ts` that imports `@testing-library/jest-dom` and registers automatic RTL cleanup
-- [ ] T004 Add npm scripts `test`, `test:run`, `test:ui` to `package.json`
-- [ ] T005 Create `tests/keyboard/` directory and a placeholder smoke test (`tests/keyboard/smoke.test.ts`) that asserts `1 + 1 === 2` so WP01 has something to run green before WP02 arrives
+- [x] T001 Install devDependencies: `vitest`, `@testing-library/react`, `@testing-library/user-event`, `@testing-library/jest-dom`, `jsdom`, `@vitest/ui` (package.json)
+- [x] T002 Create `vitest.config.ts` at repo root with jsdom environment, CSS support, and setup file reference
+- [x] T003 Create `tests/setup.ts` that imports `@testing-library/jest-dom` and registers automatic RTL cleanup
+- [x] T004 Add npm scripts `test`, `test:run`, `test:ui` to `package.json`
+- [x] T005 Create `tests/keyboard/` directory and a placeholder smoke test (`tests/keyboard/smoke.test.ts`) that asserts `1 + 1 === 2` so WP01 has something to run green before WP02 arrives
 
 ### Implementation Notes
 
