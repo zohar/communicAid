@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Test Harness Bootstrap
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - NFR-005
@@ -19,8 +19,8 @@ subtasks:
 - T005
 phase: Phase 1 - Foundation
 assignee: ''
-agent: "claude-opus-4-6"
-shell_pid: "19334"
+agent: claude-opus-4-6
+shell_pid: '19334'
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
@@ -211,3 +211,4 @@ The reviewer for WP01 must verify:
 
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
 - 2026-04-14T14:15:54Z – claude-opus-4-6 – shell_pid=19334 – lane=doing – Assigned agent via workflow command
+- 2026-04-14T14:20:33Z – claude-opus-4-6 – shell_pid=19334 – lane=for_review – Ready for review: Vitest 2 + RTL 16 test harness bootstrapped. typecheck/lint/test:run all green on Node 22 (project's required Vite 8 engine). No src/ changes.

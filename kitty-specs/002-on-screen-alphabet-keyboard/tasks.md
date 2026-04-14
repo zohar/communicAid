@@ -342,3 +342,8 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 | T026       | Accessibility verification (Lighthouse, contrast, touch target)         | WP06         | P2       | Yes       |
 | T027       | Privacy verification (console / network / storage)                      | WP06         | P2       | Yes       |
 | T028       | Bundle-split verification (KeyboardScreen chunk ≤ 20 KB gzipped)        | WP06         | P2       | Yes       |
+
+<!-- status-model:start -->
+## Canonical Status (Generated)
+- WP01: for_review
+<!-- status-model:end -->
