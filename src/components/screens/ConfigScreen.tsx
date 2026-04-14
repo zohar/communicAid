@@ -8,12 +8,14 @@ import { IconPicker } from '../config/IconPicker';
 import { ResetButton } from '../config/ResetButton';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useOverrides } from '../../hooks/useOverrides';
+import { useQuickNames } from '../../hooks/useQuickNames';
 
 type ConfigView =
   | { mode: 'main' }
   | { mode: 'category'; category: Category }
   | { mode: 'entry'; category: Category; entryId: string; text: string; icon: string }
-  | { mode: 'icon'; category: Category; entryId: string; text: string; icon: string };
+  | { mode: 'icon'; category: Category; entryId: string; text: string; icon: string }
+  | { mode: 'quickname-icon'; quickNameId: string; currentIcon: string };
 
 interface ConfigScreenProps {
   categories: Category[];
@@ -23,9 +25,26 @@ interface ConfigScreenProps {
 export function ConfigScreen({ categories }: ConfigScreenProps) {
   const { t, tEn } = useTranslation();
   const [view, setView] = useState<ConfigView>({ mode: 'main' });
+  const { quickNames, update: updateQuickName, move: moveQuickName } = useQuickNames();
 
-  const activeCategoryId = view.mode !== 'main' ? view.category.id : '';
+  const activeCategoryId =
+    view.mode === 'category' || view.mode === 'entry' || view.mode === 'icon'
+      ? view.category.id
+      : '';
   const { setOverride, resetCategory } = useOverrides(activeCategoryId);
+
+  if (view.mode === 'quickname-icon') {
+    return (
+      <IconPicker
+        currentIcon={view.currentIcon}
+        onSelect={(icon) => {
+          updateQuickName(view.quickNameId, { icon });
+          setView({ mode: 'main' });
+        }}
+        onCancel={() => setView({ mode: 'main' })}
+      />
+    );
+  }
 
   if (view.mode === 'icon') {
     return (
@@ -86,6 +105,56 @@ export function ConfigScreen({ categories }: ConfigScreenProps) {
           {t('language')} / שפה / اللغة
         </h2>
         <LanguagePicker />
+      </div>
+
+      <div className="bg-white border-4 border-slate-300 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-700 mb-4">{t('quick-names')}</h2>
+        <div className="grid grid-cols-2 gap-4">
+          {quickNames.map((quick, index) => (
+            <div
+              key={quick.id}
+              className="flex items-center gap-2 p-3 rounded-xl border-2 border-slate-200"
+            >
+              <button
+                onClick={() =>
+                  setView({
+                    mode: 'quickname-icon',
+                    quickNameId: quick.id,
+                    currentIcon: quick.icon,
+                  })
+                }
+                className="text-4xl p-2 rounded-lg hover:bg-slate-100 active:bg-slate-200 transition-all min-w-[60px] min-h-[60px] flex items-center justify-center"
+                aria-label={t('change-icon')}
+              >
+                {quick.icon}
+              </button>
+              <input
+                type="text"
+                value={quick.name}
+                onChange={(e) => updateQuickName(quick.id, { name: e.target.value })}
+                className="flex-1 min-w-0 text-lg font-semibold text-slate-800 bg-slate-50 border-2 border-slate-300 rounded-lg px-3 py-2 min-h-[48px] focus:outline-none focus:border-blue-500"
+              />
+              <div className="flex flex-col gap-1">
+                <button
+                  onClick={() => moveQuickName(quick.id, 'up')}
+                  disabled={index === 0}
+                  aria-label="Move up"
+                  className="w-8 h-8 flex items-center justify-center rounded-md bg-slate-200 hover:bg-slate-300 active:bg-slate-400 text-slate-700 text-lg font-bold disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                >
+                  ▲
+                </button>
+                <button
+                  onClick={() => moveQuickName(quick.id, 'down')}
+                  disabled={index === quickNames.length - 1}
+                  aria-label="Move down"
+                  className="w-8 h-8 flex items-center justify-center rounded-md bg-slate-200 hover:bg-slate-300 active:bg-slate-400 text-slate-700 text-lg font-bold disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+                >
+                  ▼
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div>

@@ -6,9 +6,10 @@ import { HomeScreen } from './components/screens/HomeScreen';
 import { CategoryScreen } from './components/screens/CategoryScreen';
 import { ConfigScreen } from './components/screens/ConfigScreen';
 import { categories } from './data/categories';
-import { Category, RecentItem, QuickName } from './types';
+import { Category, RecentItem } from './types';
 import { useLanguage } from './hooks/useLanguage';
 import { useTranslation } from './hooks/useTranslation';
+import { useQuickNames } from './hooks/useQuickNames';
 
 type NavigationState = {
   screen: 'home' | 'category' | 'config';
@@ -26,12 +27,7 @@ function App() {
   });
 
   const [recentItems, setRecentItems] = useState<RecentItem[]>([]);
-  const [quickNames] = useState<QuickName[]>([
-    { id: '1', name: 'Nurse', icon: '👩‍⚕️', position: 1 },
-    { id: '2', name: 'Mum', icon: '👩', position: 2 },
-    { id: '3', name: 'Dad', icon: '👨', position: 3 },
-    { id: '4', name: 'Doctor', icon: '👨‍⚕️', position: 4 },
-  ]);
+  const { quickNames } = useQuickNames();
 
   const [selectedMessage, setSelectedMessage] = useState<string>('');
 
@@ -114,14 +110,12 @@ function App() {
       />
 
       {selectedMessage && (
-        <div className="bg-green-500 text-white text-center py-6 px-4 shadow-lg border-b-4 border-green-600">
+        <div className="fixed top-20 left-1/2 -translate-x-1/2 z-50 bg-green-500 text-white text-center py-4 px-8 shadow-2xl rounded-2xl border-4 border-green-600 pointer-events-none">
           <p className="text-4xl font-bold">{selectedMessage}</p>
         </div>
       )}
 
       <div className="flex-1 overflow-auto p-6">
-        <RecentItems items={recentItems} onItemTap={handleItemTap} />
-
         {navigation.screen === 'home' && (
           <HomeScreen categories={categories} onCategorySelect={handleCategorySelect} />
         )}
@@ -143,6 +137,7 @@ function App() {
       </div>
 
       <ActionBar quickNames={quickNames} onItemTap={handleItemTap} />
+      <RecentItems items={recentItems} onItemTap={handleItemTap} />
     </div>
   );
 }

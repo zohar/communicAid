@@ -37,9 +37,12 @@ export const ru: TranslationDictionary = {
   'stomach': 'Живот',
   'arm': 'Рука',
   'leg': 'Нога',
+  'bp-back': 'Спина',
+  'bp-left': 'Слева',
+  'bp-right': 'Справа',
 
   // Body Parts phrases
-  'hurts-here': 'Болит здесь',
+  'dont-feel': 'Ничего не чувствую',
   'numb': 'Онемело',
 
   // Food & Drink - Fruits & Vegetables

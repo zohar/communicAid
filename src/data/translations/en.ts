@@ -37,9 +37,12 @@ export const en: TranslationDictionary = {
   'stomach': 'Stomach',
   'arm': 'Arm',
   'leg': 'Leg',
+  'bp-back': 'Back',
+  'bp-left': 'Left',
+  'bp-right': 'Right',
 
   // Body Parts phrases
-  'hurts-here': 'It hurts here',
+  'dont-feel': "I don't feel anything",
   'numb': 'Feels numb',
 
   // Food & Drink - Fruits & Vegetables
@@ -153,6 +156,8 @@ export const en: TranslationDictionary = {
   'quickname-mum': 'Mum',
   'quickname-dad': 'Dad',
   'quickname-doctor': 'Doctor',
+  'quickname-partner': 'Partner',
+  'quickname-friend': 'Friend',
 
   // Pain scale
   'pain-level-1': 'Level 1',

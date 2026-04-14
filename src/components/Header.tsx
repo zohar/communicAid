@@ -1,5 +1,6 @@
-import { Home, ArrowLeft, Settings } from 'lucide-react';
+import { Home, ArrowLeft, ArrowRight, Settings } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { useLanguage } from '../hooks/useLanguage';
 
 interface HeaderProps {
   title: string;
@@ -9,7 +10,9 @@ interface HeaderProps {
 }
 
 export function Header({ title, onBack, onHome, onSettings }: HeaderProps) {
+  const { isRTL } = useLanguage();
   const [currentTime, setCurrentTime] = useState(new Date());
+  const BackIcon = isRTL ? ArrowRight : ArrowLeft;
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,7 +42,7 @@ export function Header({ title, onBack, onHome, onSettings }: HeaderProps) {
               onClick={onBack}
               className="bg-slate-700 hover:bg-slate-600 active:bg-slate-500 p-4 rounded-xl flex items-center justify-center transition-all shadow-md min-w-[70px] min-h-[70px]"
             >
-              <ArrowLeft size={32} />
+              <BackIcon size={32} />
             </button>
           )}
           <button

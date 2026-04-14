@@ -37,9 +37,12 @@ export const he: TranslationDictionary = {
   'stomach': 'בטן',
   'arm': 'יד',
   'leg': 'רגל',
+  'bp-back': 'גב',
+  'bp-left': 'שמאל',
+  'bp-right': 'ימין',
 
   // Body Parts phrases
-  'hurts-here': 'כואב לי פה',
+  'dont-feel': 'אני לא מרגיש כלום',
   'numb': 'מרגיש נימול',
 
   // Food & Drink - Fruits & Vegetables
@@ -64,8 +67,8 @@ export const he: TranslationDictionary = {
   'milk': 'חלב',
 
   // Food & Drink phrases
-  'hungry': 'אני רעב',
-  'thirsty': 'אני צמא',
+  'hungry': 'אני רעב/ה',
+  'thirsty': 'אני צמא/ה',
 
   // Daily Tasks items
   'daily-bathroom': 'שירותים',
@@ -135,8 +138,8 @@ export const he: TranslationDictionary = {
   'questions-how': 'איך?',
 
   // Questions phrases
-  'understand': 'אני מבין',
-  'dont-understand': 'אני לא מבין',
+  'understand': 'אני מבין/ה',
+  'dont-understand': 'אני לא מבין/ה',
 
   // Action bar
   'action-yes': 'כן',
@@ -153,6 +156,8 @@ export const he: TranslationDictionary = {
   'quickname-mum': 'אמא',
   'quickname-dad': 'אבא',
   'quickname-doctor': 'רופא',
+  'quickname-partner': 'בן/בת זוג',
+  'quickname-friend': 'חבר',
 
   // Pain scale
   'pain-level-1': 'רמה 1',

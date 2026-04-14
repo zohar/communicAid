@@ -32,10 +32,13 @@ export const categories: Category[] = [
       { id: 'stomach', text: 'Stomach', icon: '🫃' },
       { id: 'arm', text: 'Arm', icon: '💪' },
       { id: 'leg', text: 'Leg', icon: '🦵' },
+      { id: 'bp-back', text: 'Back', icon: '🔄' },
+      { id: 'bp-left', text: 'Left', icon: '⬅️' },
+      { id: 'bp-right', text: 'Right', icon: '➡️' },
     ],
     phrases: [
-      { id: 'hurts-here', text: 'It hurts here', icon: '☝️' },
-      { id: 'numb', text: 'Feels numb', icon: '😶' },
+      { id: 'dont-feel', text: "I don't feel anything", icon: '😶' },
+      { id: 'numb', text: 'Feels numb', icon: '🫥' },
     ],
   },
   {
