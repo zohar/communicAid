@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: KeyboardScreen Core
-lane: planned
+lane: "doing"
 dependencies:
 - WP02
 - WP01
@@ -26,6 +26,9 @@ requirement_refs:
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: 002-on-screen-alphabet-keyboard-WP03-merge-base
+base_commit: 8c4b06ba74c31c83c5be8a51a9ab718e373fe73b
+created_at: '2026-04-14T14:24:32.395925+00:00'
 subtasks:
 - T009
 - T010
@@ -35,7 +38,7 @@ subtasks:
 phase: Phase 2 - Core Component
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "24778"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
