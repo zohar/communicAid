@@ -2,7 +2,9 @@
 work_package_id: WP03
 title: KeyboardScreen Core
 lane: planned
-dependencies: [WP02]
+dependencies:
+- WP02
+- WP01
 requirement_refs:
 - C-002
 - C-003
@@ -23,7 +25,7 @@ requirement_refs:
 - NFR-006
 planning_base_branch: keyboard
 merge_target_branch: keyboard
-branch_strategy: 'Current branch at workflow start: keyboard. Planning/base branch for this feature: keyboard. Completed changes must merge into keyboard.'
+branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
 subtasks:
 - T009
 - T010
