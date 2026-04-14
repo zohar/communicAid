@@ -10,19 +10,24 @@ export function ActionBar({ quickNames, onItemTap }: ActionBarProps) {
   const { t, tEn } = useTranslation();
 
   const permanentActions = [
-    { id: 'action-yes', icon: '✅' },
-    { id: 'action-no', icon: '❌' },
-    { id: 'action-help', icon: '🆘' },
-    { id: 'action-i-want', icon: '👍' },
-    { id: 'action-i-dont-want', icon: '👎' },
-    { id: 'action-stop', icon: '🛑' },
-    { id: 'action-more', icon: '➕' },
-    { id: 'action-less', icon: '➖' },
+    { id: 'action-yes', icon: '✅', tone: 'positive' as const },
+    { id: 'action-no', icon: '❌', tone: 'negative' as const },
+    { id: 'action-i-want', icon: '👍', tone: 'positive' as const },
+    { id: 'action-i-dont-want', icon: '👎', tone: 'negative' as const },
+    { id: 'action-more', icon: '➕', tone: 'positive' as const },
+    { id: 'action-less', icon: '➖', tone: 'negative' as const },
+    { id: 'action-help', icon: '🆘', tone: 'positive' as const },
+    { id: 'action-stop', icon: '🛑', tone: 'negative' as const },
   ];
+
+  const toneStyles = {
+    positive: { backgroundColor: '#dcfce7', borderColor: '#86efac' },
+    negative: { backgroundColor: '#fee2e2', borderColor: '#fca5a5' },
+  };
 
   return (
     <div className="bg-slate-800 border-t-4 border-slate-700 p-3 shadow-lg">
-      <div className="grid grid-cols-4 gap-3 mb-3">
+      <div className="grid grid-cols-4 grid-rows-2 grid-flow-col gap-3 mb-3">
         {permanentActions.map((action) => {
           const text = t(action.id);
           const subtitle = tEn(action.id);
@@ -30,12 +35,13 @@ export function ActionBar({ quickNames, onItemTap }: ActionBarProps) {
             <button
               key={action.id}
               onClick={() => onItemTap(text, action.icon)}
-              className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-xl p-4 flex flex-col items-center justify-center gap-1 transition-all shadow-md min-h-[90px] text-lg font-bold"
+              style={toneStyles[action.tone]}
+              className="text-black rounded-xl p-4 flex flex-col items-center justify-center gap-1 transition-all shadow-md min-h-[90px] font-bold border-2"
             >
               <span className="text-4xl">{action.icon}</span>
-              <span className="text-sm leading-tight">{text}</span>
+              <span className="text-2xl leading-tight">{text}</span>
               {subtitle && (
-                <span className="text-[10px] leading-tight opacity-70">{subtitle}</span>
+                <span className="text-sm leading-tight opacity-70">{subtitle}</span>
               )}
             </button>
           );
@@ -48,10 +54,11 @@ export function ActionBar({ quickNames, onItemTap }: ActionBarProps) {
             <button
               key={quick.id}
               onClick={() => onItemTap(quick.name, quick.icon)}
-              className="bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white rounded-lg p-3 flex flex-col items-center justify-center gap-1 transition-all shadow-md min-h-[75px]"
+              style={{ backgroundColor: '#dbeafe', borderColor: '#93c5fd' }}
+              className="text-black rounded-lg p-3 flex flex-col items-center justify-center gap-1 transition-all shadow-md min-h-[75px] border-2"
             >
               <span className="text-3xl">{quick.icon}</span>
-              <span className="text-xs font-semibold leading-tight">{quick.name}</span>
+              <span className="text-xl font-bold leading-tight">{quick.name}</span>
             </button>
           ))}
         </div>
