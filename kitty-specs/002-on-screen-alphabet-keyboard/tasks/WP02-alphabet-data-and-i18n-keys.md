@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: Alphabet Data & i18n Keys
-lane: planned
+lane: "doing"
 dependencies: [WP01]
 requirement_refs:
 - C-001
@@ -12,6 +12,9 @@ requirement_refs:
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: 002-on-screen-alphabet-keyboard-WP01
+base_commit: d32dec644deca634fe32140529189c235bc779c0
+created_at: '2026-04-14T14:21:06.076651+00:00'
 subtasks:
 - T006
 - T007
@@ -19,7 +22,7 @@ subtasks:
 phase: Phase 1 - Foundation
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "22124"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
