@@ -195,4 +195,13 @@ export const ar: TranslationDictionary = {
   'change-icon': 'تغيير الأيقونة',
   'quick-names': 'أسماء سريعة',
   'search-icons': 'بحث عن أيقونات...',
+
+  // Keyboard
+  'keyboard': 'لوحة المفاتيح',
+  'space': 'مسافة',
+  'backspace': 'مسح',
+  'clear': 'مسح الكل',
+  'show': 'إظهار',
+  'close': 'إغلاق',
+  'switchLanguage': 'تغيير اللغة',
 };

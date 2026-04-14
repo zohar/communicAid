@@ -195,4 +195,13 @@ export const he: TranslationDictionary = {
   'change-icon': 'שנה אייקון',
   'quick-names': 'שמות מהירים',
   'search-icons': 'חפש אייקונים...',
+
+  // Keyboard
+  'keyboard': 'מקלדת',
+  'space': 'רווח',
+  'backspace': 'מחק',
+  'clear': 'נקה הכל',
+  'show': 'הצג',
+  'close': 'סגור',
+  'switchLanguage': 'החלף שפה',
 };

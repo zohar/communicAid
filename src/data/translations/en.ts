@@ -195,4 +195,13 @@ export const en: TranslationDictionary = {
   'change-icon': 'Change icon',
   'quick-names': 'Quick Names',
   'search-icons': 'Search icons...',
+
+  // Keyboard
+  'keyboard': 'Keyboard',
+  'space': 'Space',
+  'backspace': 'Backspace',
+  'clear': 'Clear',
+  'show': 'Show',
+  'close': 'Close',
+  'switchLanguage': 'Change language',
 };
