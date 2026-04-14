@@ -37,7 +37,7 @@ subtasks:
 - T016
 phase: Phase 2 - Core Component
 assignee: ''
-agent: ''
+agent: "claude-opus-4-6"
 shell_pid: "24778"
 review_status: ''
 reviewed_by: ''
@@ -321,3 +321,4 @@ The reviewer for WP03 must verify:
 ## Activity Log
 
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
+- 2026-04-14T14:24:33Z – claude-opus-4-6 – shell_pid=24778 – lane=doing – Assigned agent via workflow command
