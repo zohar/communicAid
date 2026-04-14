@@ -6,7 +6,7 @@ const STORAGE_KEY = 'communicaid-language';
 
 function getStoredLanguage(): Language {
   const stored = localStorage.getItem(STORAGE_KEY);
-  if (stored === 'en' || stored === 'he' || stored === 'ar') return stored;
+  if (stored === 'en' || stored === 'he' || stored === 'ar' || stored === 'ru') return stored;
   return defaultLanguage;
 }
 

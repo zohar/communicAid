@@ -1,4 +1,4 @@
-export type Language = 'en' | 'he' | 'ar';
+export type Language = 'en' | 'he' | 'ar' | 'ru';
 
 export interface LanguageConfig {
   code: Language;

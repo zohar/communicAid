@@ -6,13 +6,14 @@ const languageFlags: Record<Language, string> = {
   en: '🇬🇧',
   he: '🇮🇱',
   ar: '🇸🇦',
+  ru: '🇷🇺',
 };
 
 export function LanguagePicker() {
   const { language, setLanguage } = useLanguage();
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-2 gap-4">
       {supportedLanguages.map((lang) => {
         const config = languageConfigs[lang];
         const isActive = language === lang;
