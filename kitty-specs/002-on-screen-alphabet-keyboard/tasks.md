@@ -71,9 +71,9 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 
 ### Included Subtasks
 
-- [ ] T006 Create `src/data/alphabets.ts` exporting `alphabets: Record<Language, readonly string[]>` and `alphabetGridColumns: Record<Language, number>` with the values defined in `data-model.md`
-- [ ] T007 [P] Create `tests/keyboard/alphabets.test.ts` with invariant assertions (correct counts, no duplicates, no whitespace/digits/punctuation, Arabic lacks lam-alif, Russian Ё in canonical position, every `Language` has entries in both maps)
-- [ ] T008 [P] Add new translation keys (`keyboard`, `space`, `backspace`, `clear`, `show`, `close`, `switchLanguage`) to the existing translation dictionaries under `src/data/translations/` for all four languages (en/he/ar/ru)
+- [x] T006 Create `src/data/alphabets.ts` exporting `alphabets: Record<Language, readonly string[]>` and `alphabetGridColumns: Record<Language, number>` with the values defined in `data-model.md`
+- [x] T007 [P] Create `tests/keyboard/alphabets.test.ts` with invariant assertions (correct counts, no duplicates, no whitespace/digits/punctuation, Arabic lacks lam-alif, Russian Ё in canonical position, every `Language` has entries in both maps)
+- [x] T008 [P] Add new translation keys (`keyboard`, `space`, `backspace`, `clear`, `show`, `close`, `switchLanguage`) to the existing translation dictionaries under `src/data/translations/` for all four languages (en/he/ar/ru)
 
 ### Implementation Notes
 
