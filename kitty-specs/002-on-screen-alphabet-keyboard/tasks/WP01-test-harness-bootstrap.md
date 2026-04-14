@@ -1,13 +1,16 @@
 ---
 work_package_id: WP01
 title: Test Harness Bootstrap
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - NFR-005
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: keyboard
+base_commit: cec683ea519b1061a61d3d8f9a473616f22d931f
+created_at: '2026-04-14T14:15:54.306866+00:00'
 subtasks:
 - T001
 - T002
@@ -17,7 +20,7 @@ subtasks:
 phase: Phase 1 - Foundation
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "19334"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
