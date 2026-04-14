@@ -105,11 +105,11 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 
 ### Included Subtasks
 
-- [ ] T009 Create `src/components/screens/KeyboardScreen.tsx` with props interface `{ open: boolean; onClose: () => void }`, internal state (`message`, `keyboardLanguage`, `takeoverOpen`), and the reset-on-close effect that zeroes state when `open` transitions `true → false`
-- [ ] T010 Render the message display region (large text, `aria-live="polite"`, `dir` driven by `keyboardLanguage`, visible even when empty)
-- [ ] T011 Render the letter grid from `alphabets[keyboardLanguage]` using CSS Grid with `alphabetGridColumns[keyboardLanguage]` columns, key size ≥ 64×64, consistent styling with existing `CategoryTile` / `ItemButton`
-- [ ] T012 Implement control row with Space, Backspace, and Clear buttons (lucide-react icons; Backspace `Delete`, Clear `RotateCcw`, Space a wide key). Wire handlers to `message` state.
-- [ ] T016 Enforce the 200-character maximum: letter-tap and space-tap handlers silently ignore input when `message.length >= 200`. Backspace and Clear always work.
+- [x] T009 Create `src/components/screens/KeyboardScreen.tsx` with props interface `{ open: boolean; onClose: () => void }`, internal state (`message`, `keyboardLanguage`, `takeoverOpen`), and the reset-on-close effect that zeroes state when `open` transitions `true → false`
+- [x] T010 Render the message display region (large text, `aria-live="polite"`, `dir` driven by `keyboardLanguage`, visible even when empty)
+- [x] T011 Render the letter grid from `alphabets[keyboardLanguage]` using CSS Grid with `alphabetGridColumns[keyboardLanguage]` columns, key size ≥ 64×64, consistent styling with existing `CategoryTile` / `ItemButton`
+- [x] T012 Implement control row with Space, Backspace, and Clear buttons (lucide-react icons; Backspace `Delete`, Clear `RotateCcw`, Space a wide key). Wire handlers to `message` state.
+- [x] T016 Enforce the 200-character maximum: letter-tap and space-tap handlers silently ignore input when `message.length >= 200`. Backspace and Clear always work.
 
 ### Implementation Notes
 
