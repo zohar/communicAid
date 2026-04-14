@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: Alphabet Data & i18n Keys
-lane: "doing"
+lane: "for_review"
 dependencies: [WP01]
 requirement_refs:
 - C-001
@@ -21,8 +21,8 @@ subtasks:
 - T008
 phase: Phase 1 - Foundation
 assignee: ''
-agent: "claude-opus-4-6"
-shell_pid: "22124"
+agent: claude-opus-4-6
+shell_pid: '22124'
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
@@ -244,3 +244,4 @@ The reviewer for WP02 must verify:
 
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
 - 2026-04-14T14:21:06Z – claude-opus-4-6 – shell_pid=22124 – lane=doing – Assigned agent via workflow command
+- 2026-04-14T14:23:46Z – claude-opus-4-6 – shell_pid=22124 – lane=for_review – Ready for review: alphabets.ts + 23 alphabet invariant tests + 7 translation keys x 4 languages. Stacks on WP01. typecheck/lint clean, 24 tests pass on Node 22.
