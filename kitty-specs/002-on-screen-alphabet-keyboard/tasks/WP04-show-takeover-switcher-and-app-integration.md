@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Show Takeover, Language Switcher, and App Integration
-lane: planned
+lane: "doing"
 dependencies: [WP03]
 requirement_refs:
 - C-002
@@ -25,6 +25,9 @@ requirement_refs:
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: 002-on-screen-alphabet-keyboard-WP03
+base_commit: 4a8d142b90d3da737fa183e15d8cc4a767f76628
+created_at: '2026-04-14T19:34:17.838277+00:00'
 subtasks:
 - T013
 - T014
@@ -34,7 +37,7 @@ subtasks:
 phase: Phase 2 - Core Component
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "27479"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
