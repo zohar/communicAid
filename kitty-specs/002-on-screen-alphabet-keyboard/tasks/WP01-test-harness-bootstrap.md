@@ -19,7 +19,7 @@ subtasks:
 - T005
 phase: Phase 1 - Foundation
 assignee: ''
-agent: ''
+agent: "claude-opus-4-6"
 shell_pid: "19334"
 review_status: ''
 reviewed_by: ''
@@ -210,3 +210,4 @@ The reviewer for WP01 must verify:
 ## Activity Log
 
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
+- 2026-04-14T14:15:54Z – claude-opus-4-6 – shell_pid=19334 – lane=doing – Assigned agent via workflow command
