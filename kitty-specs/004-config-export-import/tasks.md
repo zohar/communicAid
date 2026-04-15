@@ -139,4 +139,5 @@ Splitting this way keeps each WP independently reviewable and lets the test-firs
 <!-- status-model:start -->
 ## Canonical Status (Generated)
 - WP01: for_review
+- WP02: for_review
 <!-- status-model:end -->

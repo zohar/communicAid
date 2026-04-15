@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: ConfigScreen UI + Hook Subscriptions
-lane: "doing"
+lane: "for_review"
 dependencies:
 - WP01
 requirement_refs:
@@ -28,8 +28,8 @@ subtasks:
 - T011
 phase: Phase 2 - User-facing UI
 assignee: ''
-agent: "claude-opus-4-6"
-shell_pid: "60672"
+agent: claude-opus-4-6
+shell_pid: '60672'
 review_status: ''
 reviewed_by: ''
 history:
@@ -309,3 +309,4 @@ To change this work package's lane:
 
 **Implement command**: `spec-kitty implement WP02 --base WP01`
 - 2026-04-15T08:48:56Z – claude-opus-4-6 – shell_pid=60672 – lane=doing – Assigned agent via workflow command
+- 2026-04-15T08:51:52Z – claude-opus-4-6 – shell_pid=60672 – lane=for_review – Hook subscriptions wired (useLanguage dispatches+listens, useOverrides listens). ConfigScreen has Export/Import buttons in a Backup section. 5 translation keys added in all 4 locales. Production build clean, full test suite 60/60 green, typecheck and lint clean, no new deps. Manual quickstart smoke tests not exhaustively run by the implementing agent — recommend reviewer walks through quickstart.md scenarios in the dev server.
