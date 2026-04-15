@@ -1,7 +1,7 @@
 ---
 work_package_id: WP04
 title: Show Takeover, Language Switcher, and App Integration
-lane: "for_review"
+lane: "approved"
 dependencies: [WP03]
 requirement_refs:
 - C-002
@@ -38,8 +38,8 @@ phase: Phase 2 - Core Component
 assignee: ''
 agent: claude-opus-4-6
 shell_pid: '27479'
-review_status: ''
-reviewed_by: ''
+review_status: "approved"
+reviewed_by: "Zohar Stolar"
 review_feedback: ''
 history:
 - timestamp: '2026-04-14T14:01:38Z'
@@ -373,3 +373,4 @@ The reviewer for WP04 must verify:
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
 - 2026-04-14T19:34:18Z – claude-opus-4-6 – shell_pid=27479 – lane=doing – Assigned agent via workflow command
 - 2026-04-15T07:04:03Z – claude-opus-4-6 – shell_pid=27479 – lane=for_review – Ready for review: Show+takeover, switcher, Header button, App.tsx lazy mount. KeyboardScreen chunk is 2.22 kB gzipped (target <=20 kB). All gates green.
+- 2026-04-15T07:25:59Z – claude-opus-4-6 – shell_pid=27479 – lane=approved – User directed to skip review and merge. Show takeover, switcher, Header+App integration all wired.
