@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: Alphabet Data & i18n Keys
-lane: "approved"
+lane: "done"
 dependencies: [WP01]
 requirement_refs:
 - C-001
@@ -246,3 +246,4 @@ The reviewer for WP02 must verify:
 - 2026-04-14T14:21:06Z – claude-opus-4-6 – shell_pid=22124 – lane=doing – Assigned agent via workflow command
 - 2026-04-14T14:23:46Z – claude-opus-4-6 – shell_pid=22124 – lane=for_review – Ready for review: alphabets.ts + 23 alphabet invariant tests + 7 translation keys x 4 languages. Stacks on WP01. typecheck/lint clean, 24 tests pass on Node 22.
 - 2026-04-15T07:25:57Z – claude-opus-4-6 – shell_pid=22124 – lane=approved – User directed to skip review and merge. Alphabets + i18n keys looked correct during implementation.
+- 2026-04-15T07:29:34Z – claude-opus-4-6 – shell_pid=22124 – lane=done – Merged into keyboard via merge commit a82fa8d
