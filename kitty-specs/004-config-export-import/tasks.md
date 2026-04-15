@@ -32,12 +32,12 @@ Splitting this way keeps each WP independently reviewable and lets the test-firs
 
 ### Included Subtasks
 
-- [ ] T001 Write Vitest test file `src/utils/configIO.test.ts` with all 12 cases from research.md R7. Run `npm run test` and confirm every test fails (red baseline — TEST_FIRST gate)
-- [ ] T002 Define the new TypeScript shapes in `src/utils/configIO.ts`: `ExportedConfig`, `ImportResult`, `ImportError` (per data-model.md)
-- [ ] T003 Implement `exportConfig(): string` — reads the three localStorage keys, builds an `ExportedConfig` object, returns `JSON.stringify(obj, null, 2)`
-- [ ] T004 Implement `parseAndValidate(text: string): ImportResult` — pure validate-then-write enforcer per research.md R2 and R3; returns discriminated union, never throws
-- [ ] T005 Implement `applyConfig(config: ExportedConfig): void` — snapshots the three keys, writes new values, dispatches all three change events; restores snapshot on `setItem` failure (research.md R8)
-- [ ] T006 Run `npm run test` (all green), `npm run typecheck` (clean), `npm run lint` (clean). Confirm no new entries in `package.json`
+- [x] T001 Write Vitest test file `src/utils/configIO.test.ts` with all 12 cases from research.md R7. Run `npm run test` and confirm every test fails (red baseline — TEST_FIRST gate)
+- [x] T002 Define the new TypeScript shapes in `src/utils/configIO.ts`: `ExportedConfig`, `ImportResult`, `ImportError` (per data-model.md)
+- [x] T003 Implement `exportConfig(): string` — reads the three localStorage keys, builds an `ExportedConfig` object, returns `JSON.stringify(obj, null, 2)`
+- [x] T004 Implement `parseAndValidate(text: string): ImportResult` — pure validate-then-write enforcer per research.md R2 and R3; returns discriminated union, never throws
+- [x] T005 Implement `applyConfig(config: ExportedConfig): void` — snapshots the three keys, writes new values, dispatches all three change events; restores snapshot on `setItem` failure (research.md R8)
+- [x] T006 Run `npm run test` (all green), `npm run typecheck` (clean), `npm run lint` (clean). Confirm no new entries in `package.json`
 
 ### Implementation Notes
 
