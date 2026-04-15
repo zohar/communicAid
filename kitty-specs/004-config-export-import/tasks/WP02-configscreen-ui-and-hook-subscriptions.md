@@ -28,7 +28,7 @@ subtasks:
 - T011
 phase: Phase 2 - User-facing UI
 assignee: ''
-agent: ''
+agent: "claude-opus-4-6"
 shell_pid: "60672"
 review_status: ''
 reviewed_by: ''
@@ -308,3 +308,4 @@ To change this work package's lane:
 **Valid lanes**: `planned`, `doing`, `for_review`, `done`
 
 **Implement command**: `spec-kitty implement WP02 --base WP01`
+- 2026-04-15T08:48:56Z – claude-opus-4-6 – shell_pid=60672 – lane=doing – Assigned agent via workflow command
