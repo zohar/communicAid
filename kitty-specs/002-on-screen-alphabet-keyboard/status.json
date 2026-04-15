@@ -1,8 +1,8 @@
 {
-  "event_count": 13,
+  "event_count": 14,
   "feature_slug": "002-on-screen-alphabet-keyboard",
-  "last_event_id": "01KP7ZXG0A4Q4D5D9S5GDT4SNA",
-  "materialized_at": "2026-04-15T07:15:30.442699+00:00",
+  "last_event_id": "01KP80E96NXYRECAHDFMCHQ50D",
+  "materialized_at": "2026-04-15T07:24:40.533765+00:00",
   "summary": {
     "approved": 0,
     "blocked": 0,
@@ -10,16 +10,16 @@
     "claimed": 0,
     "done": 0,
     "for_review": 5,
-    "in_progress": 1,
-    "planned": 0
+    "in_progress": 0,
+    "planned": 1
   },
   "work_packages": {
     "WP01": {
-      "actor": "claude-opus-4-6",
+      "actor": "user",
       "force_count": 2,
-      "lane": "in_progress",
-      "last_event_id": "01KP7ZXG0A4Q4D5D9S5GDT4SNA",
-      "last_transition_at": "2026-04-15T07:15:30.442482+00:00"
+      "lane": "planned",
+      "last_event_id": "01KP80E96NXYRECAHDFMCHQ50D",
+      "last_transition_at": "2026-04-15T07:24:40.533527+00:00"
     },
     "WP02": {
       "actor": "user",
