@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Test Harness Bootstrap
-lane: "planned"
+lane: "approved"
 dependencies: []
 requirement_refs:
 - NFR-005
@@ -21,9 +21,9 @@ phase: Phase 1 - Foundation
 assignee: ''
 agent: claude-opus-4-6
 shell_pid: '35450'
-review_status: "has_feedback"
+review_status: "approved"
 reviewed_by: "Zohar Stolar"
-review_feedback: "feedback://002-on-screen-alphabet-keyboard/WP01/20260415T072440Z-78ac612e.md"
+review_feedback: feedback://002-on-screen-alphabet-keyboard/WP01/20260415T072440Z-78ac612e.md
 history:
 - timestamp: '2026-04-14T14:01:38Z'
   lane: planned
@@ -214,3 +214,4 @@ The reviewer for WP01 must verify:
 - 2026-04-14T14:20:33Z – claude-opus-4-6 – shell_pid=19334 – lane=for_review – Ready for review: Vitest 2 + RTL 16 test harness bootstrapped. typecheck/lint/test:run all green on Node 22 (project's required Vite 8 engine). No src/ changes.
 - 2026-04-15T07:15:30Z – claude-opus-4-6 – shell_pid=35450 – lane=doing – Started review via workflow command
 - 2026-04-15T07:24:40Z – claude-opus-4-6 – shell_pid=35450 – lane=planned – Moved to planned
+- 2026-04-15T07:25:47Z – claude-opus-4-6 – shell_pid=35450 – lane=approved – User directed to skip review cycle and merge. Findings recorded in feedback pointer as post-merge cleanup: (1) add esbuild.jsx='automatic' to vitest.config.ts so WP05 test files can drop import React workaround, (2) update CLAUDE.md scripts, (3) add engines >=20.19 to package.json, (4) add vitest.config.ts to tsconfig.node.json. None are user-visible or block functionality.
