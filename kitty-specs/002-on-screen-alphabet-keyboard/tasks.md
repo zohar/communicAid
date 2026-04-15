@@ -226,7 +226,7 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 ### Included Subtasks
 
 - [x] T024 Run `npm run typecheck`, `npm run lint`, `npm run test` at repo root. Fix every error and warning. Do not suppress.
-- [ ] T025 Manual quickstart walkthrough: run `npm run dev`, follow every step in `kitty-specs/002-on-screen-alphabet-keyboard/quickstart.md` (sections 2–8), and record the outcome briefly in the WP activity log. Any failure blocks the WP.
+- [x] T025 Manual quickstart walkthrough: run `npm run dev`, follow every step in `kitty-specs/002-on-screen-alphabet-keyboard/quickstart.md` (sections 2–8), and record the outcome briefly in the WP activity log. Any failure blocks the WP.
 - [x] T026 Accessibility verification: open Chrome DevTools → Lighthouse → Accessibility, run audit on the keyboard overlay, confirm score ≥ 90. Measure rendered letter-key size with the inspector; confirm ≥ 64×64 CSS pixels at a 1024×768 viewport. Confirm WCAG AA contrast on letter keys, message display, takeover text, and control buttons using the axe extension or DevTools contrast checker.
 - [x] T027 Privacy verification: with a typed message, inspect the Console, Network, localStorage, and sessionStorage panes of DevTools. Confirm the message content does not appear in any of them. Close and reopen the overlay; confirm the message is gone.
 - [x] T028 Bundle-split verification: run `npm run build`, inspect `dist/assets/` for a chunk containing `KeyboardScreen`, and confirm its gzipped size is ≤ 20 KB (use `gzip -c <file> | wc -c` or compare Vite's build output summary).
