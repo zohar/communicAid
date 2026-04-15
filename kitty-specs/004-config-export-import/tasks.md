@@ -75,11 +75,11 @@ Splitting this way keeps each WP independently reviewable and lets the test-firs
 
 ### Included Subtasks
 
-- [ ] T007 Add `communicaid-language-changed` event dispatch in `useLanguage.setLanguage`, and a `useEffect` listener so multiple `useLanguage()` callers stay in sync
-- [ ] T008 Add a `useEffect` listener for `communicaid-overrides-changed` in `useOverrides`, mirroring the pattern already used by `useQuickNames`
-- [ ] T009 Add **Export configuration** button to `ConfigScreen.tsx`: calls `exportConfig()`, builds a Blob, triggers download via temporary anchor, revokes the URL after click. Filename `communicaid-config.json`. Errors caught and surfaced via `window.alert`
-- [ ] T010 Add **Import configuration** button + hidden `<input type="file" accept="application/json">` to `ConfigScreen.tsx`: on file selection, read text → `parseAndValidate` → if ok, `window.confirm` → if confirmed, `applyConfig` → success path is silent (UI updates via change events). Errors surfaced via `window.alert` with the message from `ImportResult`
-- [ ] T011 Run all 12 manual smoke tests from `quickstart.md` against the dev server. Confirm `npm run test`, `npm run typecheck`, and `npm run lint` are all clean
+- [x] T007 Add `communicaid-language-changed` event dispatch in `useLanguage.setLanguage`, and a `useEffect` listener so multiple `useLanguage()` callers stay in sync
+- [x] T008 Add a `useEffect` listener for `communicaid-overrides-changed` in `useOverrides`, mirroring the pattern already used by `useQuickNames`
+- [x] T009 Add **Export configuration** button to `ConfigScreen.tsx`: calls `exportConfig()`, builds a Blob, triggers download via temporary anchor, revokes the URL after click. Filename `communicaid-config.json`. Errors caught and surfaced via `window.alert`
+- [x] T010 Add **Import configuration** button + hidden `<input type="file" accept="application/json">` to `ConfigScreen.tsx`: on file selection, read text → `parseAndValidate` → if ok, `window.confirm` → if confirmed, `applyConfig` → success path is silent (UI updates via change events). Errors surfaced via `window.alert` with the message from `ImportResult`
+- [x] T011 Run all 12 manual smoke tests from `quickstart.md` against the dev server. Confirm `npm run test`, `npm run typecheck`, and `npm run lint` are all clean
 
 ### Implementation Notes
 
