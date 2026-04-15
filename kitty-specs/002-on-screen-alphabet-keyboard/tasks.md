@@ -349,6 +349,6 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 - WP02: approved
 - WP03: approved
 - WP04: approved
-- WP05: for_review
+- WP05: approved
 - WP06: for_review
 <!-- status-model:end -->
