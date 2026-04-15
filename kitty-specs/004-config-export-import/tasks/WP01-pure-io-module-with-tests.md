@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Pure I/O Module with Tests
-lane: planned
+lane: "doing"
 dependencies: []
 requirement_refs:
 - FR-003
@@ -18,6 +18,9 @@ requirement_refs:
 planning_base_branch: deploy-and-export
 merge_target_branch: deploy-and-export
 branch_strategy: Planning artifacts for this feature were generated on deploy-and-export. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into deploy-and-export unless the human explicitly redirects the landing branch.
+base_branch: deploy-and-export
+base_commit: 52e5e6bf92622b5630caa3bd4ab928779c6aa3c5
+created_at: '2026-04-15T08:38:46.857484+00:00'
 subtasks:
 - T001
 - T002
@@ -28,7 +31,7 @@ subtasks:
 phase: Phase 1 - Pure logic foundation
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "50141"
 review_status: ''
 reviewed_by: ''
 history:
