@@ -193,4 +193,13 @@ export const ru: TranslationDictionary = {
   'change-icon': 'Сменить иконку',
   'quick-names': 'Быстрые имена',
   'search-icons': 'Поиск иконок...',
+
+  // Keyboard
+  'keyboard': 'Клавиатура',
+  'space': 'Пробел',
+  'backspace': 'Стереть',
+  'clear': 'Очистить',
+  'show': 'Показать',
+  'close': 'Закрыть',
+  'switchLanguage': 'Сменить язык',
 };
