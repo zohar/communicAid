@@ -86,3 +86,8 @@ description: "Work package task list for Coolify Docker Deploy"
 | T004       | Author multi-stage `Dockerfile` | WP01 | P1 | No (depends on T002, T003) |
 | T005       | Run full acceptance script — all green | WP01 | P1 | Yes (with T006) |
 | T006       | Security & secret audit, image-size assertion | WP01 | P1 | Yes (with T005) |
+
+<!-- status-model:start -->
+## Canonical Status (Generated)
+- WP01: for_review
+<!-- status-model:end -->

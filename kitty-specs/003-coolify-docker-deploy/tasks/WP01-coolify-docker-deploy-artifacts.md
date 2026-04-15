@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Coolify Docker Deploy Artifacts
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-001
@@ -35,8 +35,8 @@ subtasks:
 - T006
 phase: Phase 1 - Deploy enablement
 assignee: ''
-agent: "claude-opus-4-6"
-shell_pid: "44939"
+agent: claude-opus-4-6
+shell_pid: '44939'
 review_status: ''
 reviewed_by: ''
 history:
@@ -440,3 +440,4 @@ To change this work package's lane:
 
 **Implement command**: `spec-kitty implement WP01`
 - 2026-04-15T08:03:44Z – claude-opus-4-6 – shell_pid=44939 – lane=doing – Assigned agent via workflow command
+- 2026-04-15T08:05:33Z – claude-opus-4-6 – shell_pid=44939 – lane=for_review – Deploy artifacts written. Docker-based acceptance checks skipped per user request (production urgency, Docker daemon not running locally).
