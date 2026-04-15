@@ -37,9 +37,12 @@ export const ar: TranslationDictionary = {
   'stomach': 'معدة',
   'arm': 'ذراع',
   'leg': 'ساق',
+  'bp-back': 'ظهر',
+  'bp-left': 'يسار',
+  'bp-right': 'يمين',
 
   // Body Parts phrases
-  'hurts-here': 'يؤلمني هنا',
+  'dont-feel': 'لا أشعر بشيء',
   'numb': 'أشعر بخدر',
 
   // Food & Drink - Fruits & Vegetables
@@ -64,8 +67,8 @@ export const ar: TranslationDictionary = {
   'milk': 'حليب',
 
   // Food & Drink phrases
-  'hungry': 'أنا جائع',
-  'thirsty': 'أنا عطشان',
+  'hungry': 'أنا جائع/ة',
+  'thirsty': 'أنا عطشان/ة',
 
   // Daily Tasks items
   'daily-bathroom': 'حمام',
@@ -153,6 +156,8 @@ export const ar: TranslationDictionary = {
   'quickname-mum': 'أمي',
   'quickname-dad': 'أبي',
   'quickname-doctor': 'طبيب',
+  'quickname-partner': 'شريك',
+  'quickname-friend': 'صديق',
 
   // Pain scale
   'pain-level-1': 'مستوى 1',
@@ -190,4 +195,13 @@ export const ar: TranslationDictionary = {
   'change-icon': 'تغيير الأيقونة',
   'quick-names': 'أسماء سريعة',
   'search-icons': 'بحث عن أيقونات...',
+
+  // Keyboard
+  'keyboard': 'لوحة المفاتيح',
+  'space': 'مسافة',
+  'backspace': 'مسح',
+  'clear': 'مسح الكل',
+  'show': 'إظهار',
+  'close': 'إغلاق',
+  'switchLanguage': 'تغيير اللغة',
 };

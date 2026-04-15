@@ -37,9 +37,12 @@ export const ru: TranslationDictionary = {
   'stomach': 'Живот',
   'arm': 'Рука',
   'leg': 'Нога',
+  'bp-back': 'Спина',
+  'bp-left': 'Слева',
+  'bp-right': 'Справа',
 
   // Body Parts phrases
-  'hurts-here': 'Болит здесь',
+  'dont-feel': 'Ничего не чувствую',
   'numb': 'Онемело',
 
   // Food & Drink - Fruits & Vegetables
@@ -190,4 +193,13 @@ export const ru: TranslationDictionary = {
   'change-icon': 'Сменить иконку',
   'quick-names': 'Быстрые имена',
   'search-icons': 'Поиск иконок...',
+
+  // Keyboard
+  'keyboard': 'Клавиатура',
+  'space': 'Пробел',
+  'backspace': 'Стереть',
+  'clear': 'Очистить',
+  'show': 'Показать',
+  'close': 'Закрыть',
+  'switchLanguage': 'Сменить язык',
 };
