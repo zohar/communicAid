@@ -185,11 +185,11 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 
 ### Included Subtasks
 
-- [ ] T019 `tests/keyboard/KeyboardScreen.test.tsx` — User Story 1: tap letters append to message, Show opens takeover with typed text, tap on takeover dismisses it, message preserved after dismissal (FR-001, FR-004, FR-008, FR-009, FR-010)
-- [ ] T020 Same file — User Story 2: backspace removes last character, backspace on empty is a no-op (FR-006)
-- [ ] T021 Same file — User Story 3: language switcher changes grid contents, already-typed text preserved across switch, switcher hidden/disabled when only one language (FR-016, FR-017, FR-019, FR-020, FR-021)
-- [ ] T022 Same file — User Story 4 and edge cases: clear empties message (FR-007), Show is inert/disabled on empty (FR-011, FR-015), state resets when `open` toggles false→true (FR-013), 200-character max is enforced
-- [ ] T023 [P] `tests/keyboard/Header.test.tsx` — Header renders a new keyboard button, button is labeled, clicking it calls `onKeyboard` prop, existing Home/Back/Settings behavior unchanged
+- [x] T019 `tests/keyboard/KeyboardScreen.test.tsx` — User Story 1: tap letters append to message, Show opens takeover with typed text, tap on takeover dismisses it, message preserved after dismissal (FR-001, FR-004, FR-008, FR-009, FR-010)
+- [x] T020 Same file — User Story 2: backspace removes last character, backspace on empty is a no-op (FR-006)
+- [x] T021 Same file — User Story 3: language switcher changes grid contents, already-typed text preserved across switch, switcher hidden/disabled when only one language (FR-016, FR-017, FR-019, FR-020, FR-021)
+- [x] T022 Same file — User Story 4 and edge cases: clear empties message (FR-007), Show is inert/disabled on empty (FR-011, FR-015), state resets when `open` toggles false→true (FR-013), 200-character max is enforced
+- [x] T023 [P] `tests/keyboard/Header.test.tsx` — Header renders a new keyboard button, button is labeled, clicking it calls `onKeyboard` prop, existing Home/Back/Settings behavior unchanged
 
 ### Implementation Notes
 
