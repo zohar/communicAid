@@ -347,7 +347,7 @@ description: "Work package task list for feature 002-on-screen-alphabet-keyboard
 ## Canonical Status (Generated)
 - WP01: approved
 - WP02: done
-- WP03: approved
+- WP03: done
 - WP04: approved
 - WP05: approved
 - WP06: approved

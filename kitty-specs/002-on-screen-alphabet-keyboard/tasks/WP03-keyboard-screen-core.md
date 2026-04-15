@@ -1,7 +1,7 @@
 ---
 work_package_id: WP03
 title: KeyboardScreen Core
-lane: "approved"
+lane: "done"
 dependencies:
 - WP02
 - WP01
@@ -324,3 +324,4 @@ The reviewer for WP03 must verify:
 - 2026-04-14T14:24:33Z – claude-opus-4-6 – shell_pid=24778 – lane=doing – Assigned agent via workflow command
 - 2026-04-14T14:27:32Z – claude-opus-4-6 – shell_pid=24778 – lane=for_review – Ready for review: KeyboardScreen core with grid, message display, Space/Backspace/Clear, Close. Deviation: dropped open:boolean prop in favor of parent-controlled conditional mount to avoid react-hooks/set-state-in-effect. WP04 parent wiring will conditionally render. typecheck/lint/tests all green.
 - 2026-04-15T07:25:58Z – claude-opus-4-6 – shell_pid=24778 – lane=approved – User directed to skip review and merge. KeyboardScreen core per contract (with documented open-prop deviation).
+- 2026-04-15T07:29:36Z – claude-opus-4-6 – shell_pid=24778 – lane=done – Merged into keyboard via merge commit a82fa8d
