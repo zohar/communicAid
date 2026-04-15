@@ -16,7 +16,7 @@ requirement_refs:
 - NFR-004
 planning_base_branch: deploy-and-export
 merge_target_branch: deploy-and-export
-branch_strategy: Branch from WP01 during /spec-kitty.implement (use --base WP01). Final merge target is deploy-and-export.
+branch_strategy: Planning artifacts for this feature were generated on deploy-and-export. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into deploy-and-export unless the human explicitly redirects the landing branch.
 subtasks:
 - T007
 - T008
