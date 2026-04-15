@@ -1,0 +1,39 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Dependencies and build output (regenerated inside the image)
+node_modules
+dist
+build
+coverage
+
+# Environment files — never enter image layers
+.env
+.env.*
+*.env
+
+# Editor / OS metadata
+.vscode
+.idea
+.DS_Store
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Spec Kitty + planning artifacts (not needed at runtime)
+kitty-specs
+.kittify
+.worktrees
+
+# Unrelated experimental directories present in this repo
+communicAid-v2
+communicAid.pen
+
+# CI / deploy configs not needed inside the image
+.github
+netlify.toml

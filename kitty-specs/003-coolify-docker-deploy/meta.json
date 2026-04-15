@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-04-15T07:50:46.081507+00:00",
+  "feature_number": "003",
+  "feature_slug": "003-coolify-docker-deploy",
+  "friendly_name": "Coolify Docker Deploy",
+  "source_description": "Add the required files for an easy deploy to Coolify using Docker (multi-stage Node build → Nginx static serve, SPA fallback, /health endpoint, no env vars).",
+  "vcs": "git",
+  "mission": "software-dev",
+  "slug": "003-coolify-docker-deploy",
+  "target_branch": "deploy-and-export"
+}
