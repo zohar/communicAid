@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Category } from '../../types';
 import { CategoryTile } from '../CategoryTile';
 import { LanguagePicker } from '../config/LanguagePicker';
@@ -9,6 +9,7 @@ import { ResetButton } from '../config/ResetButton';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useOverrides } from '../../hooks/useOverrides';
 import { useQuickNames } from '../../hooks/useQuickNames';
+import { exportConfig, parseAndValidate, applyConfig } from '../../utils/configIO';
 
 type ConfigView =
   | { mode: 'main' }
@@ -26,6 +27,57 @@ export function ConfigScreen({ categories }: ConfigScreenProps) {
   const { t, tEn } = useTranslation();
   const [view, setView] = useState<ConfigView>({ mode: 'main' });
   const { quickNames, update: updateQuickName, move: moveQuickName } = useQuickNames();
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
+  const handleExport = () => {
+    try {
+      const text = exportConfig();
+      const blob = new Blob([text], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'communicaid-config.json';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    } catch (err) {
+      window.alert(`${t('export-failed')}: ${(err as Error).message}`);
+    }
+  };
+
+  const handleImportClick = () => {
+    fileInputRef.current?.click();
+  };
+
+  const handleImportFile = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    e.target.value = ''; // allow re-selecting the same file later
+    if (!file) return;
+
+    let text: string;
+    try {
+      text = await file.text();
+    } catch (err) {
+      window.alert(`${t('import-failed')}: ${(err as Error).message}`);
+      return;
+    }
+
+    const result = parseAndValidate(text);
+    if (!result.ok) {
+      window.alert(`${t('import-failed')}: ${result.error.message}`);
+      return;
+    }
+
+    const confirmed = window.confirm(t('import-confirm'));
+    if (!confirmed) return;
+
+    try {
+      applyConfig(result.config);
+    } catch (err) {
+      window.alert(`${t('import-failed')}: ${(err as Error).message}`);
+    }
+  };
 
   const activeCategoryId =
     view.mode === 'category' || view.mode === 'entry' || view.mode === 'icon'
@@ -169,6 +221,31 @@ export function ConfigScreen({ categories }: ConfigScreenProps) {
               onClick={() => setView({ mode: 'category', category })}
             />
           ))}
+        </div>
+      </div>
+
+      <div className="bg-white border-4 border-slate-300 rounded-2xl p-6">
+        <h2 className="text-2xl font-bold text-slate-700 mb-4">{t('backup')}</h2>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <button
+            onClick={handleExport}
+            className="flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white rounded-xl px-6 py-4 text-lg font-semibold min-h-[56px] transition-all"
+          >
+            {t('export-config')}
+          </button>
+          <button
+            onClick={handleImportClick}
+            className="flex-1 bg-slate-200 hover:bg-slate-300 active:bg-slate-400 text-slate-700 rounded-xl px-6 py-4 text-lg font-semibold min-h-[56px] transition-all"
+          >
+            {t('import-config')}
+          </button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="application/json"
+            style={{ display: 'none' }}
+            onChange={handleImportFile}
+          />
         </div>
       </div>
     </div>
