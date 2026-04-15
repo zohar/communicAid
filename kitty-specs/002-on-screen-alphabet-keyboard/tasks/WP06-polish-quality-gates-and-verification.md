@@ -1,7 +1,7 @@
 ---
 work_package_id: WP06
 title: Polish, Quality Gates & Manual Verification
-lane: planned
+lane: "doing"
 dependencies: [WP05]
 requirement_refs:
 - C-003
@@ -17,6 +17,9 @@ requirement_refs:
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: 002-on-screen-alphabet-keyboard-WP05
+base_commit: 8f3edfb3ce8d7ce007ec2d6737edfc05583f6a65
+created_at: '2026-04-15T07:08:07.565277+00:00'
 subtasks:
 - T024
 - T025
@@ -26,7 +29,7 @@ subtasks:
 phase: Phase 4 - Polish & Verification
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "33202"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
