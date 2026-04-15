@@ -1,14 +1,14 @@
 {
-  "event_count": 26,
+  "event_count": 27,
   "feature_slug": "002-on-screen-alphabet-keyboard",
-  "last_event_id": "01KP80QARXB8HXZGJFN8VX5CDB",
-  "materialized_at": "2026-04-15T07:29:37.053688+00:00",
+  "last_event_id": "01KP80QBQ2AHR5X470BWPW5EC9",
+  "materialized_at": "2026-04-15T07:29:38.019168+00:00",
   "summary": {
-    "approved": 3,
+    "approved": 2,
     "blocked": 0,
     "canceled": 0,
     "claimed": 0,
-    "done": 3,
+    "done": 4,
     "for_review": 0,
     "in_progress": 0,
     "planned": 0
@@ -45,9 +45,9 @@
     "WP05": {
       "actor": "user",
       "force_count": 1,
-      "lane": "approved",
-      "last_event_id": "01KP80GQEYJA4FEGFVGF8SANKV",
-      "last_transition_at": "2026-04-15T07:26:00.670669+00:00"
+      "lane": "done",
+      "last_event_id": "01KP80QBQ2AHR5X470BWPW5EC9",
+      "last_transition_at": "2026-04-15T07:29:38.018664+00:00"
     },
     "WP06": {
       "actor": "user",
