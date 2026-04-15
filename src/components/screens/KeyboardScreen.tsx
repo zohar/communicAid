@@ -201,7 +201,7 @@ export default function KeyboardScreen({ onClose }: KeyboardScreenProps) {
             onClick={handleShow}
             disabled={showDisabled}
             aria-disabled={showDisabled}
-            className="bg-green-600 hover:bg-green-500 active:bg-green-700 border-4 border-green-800 text-white rounded-2xl shadow-md text-3xl font-bold min-w-[180px] min-h-[80px] flex items-center justify-center gap-3 transition-colors disabled:bg-slate-400 disabled:border-slate-500 disabled:text-slate-100 disabled:cursor-not-allowed"
+            className="bg-green-600 hover:bg-green-500 active:bg-green-700 border-4 border-green-800 text-white rounded-2xl shadow-md text-3xl font-bold min-w-[180px] min-h-[80px] flex items-center justify-center gap-3 transition-colors disabled:bg-slate-500 disabled:border-slate-600 disabled:text-white disabled:cursor-not-allowed"
             aria-label={t('show')}
           >
             <Eye size={36} />
