@@ -1,7 +1,7 @@
 ---
 work_package_id: WP02
 title: ConfigScreen UI + Hook Subscriptions
-lane: planned
+lane: "doing"
 dependencies:
 - WP01
 requirement_refs:
@@ -17,6 +17,9 @@ requirement_refs:
 planning_base_branch: deploy-and-export
 merge_target_branch: deploy-and-export
 branch_strategy: Planning artifacts for this feature were generated on deploy-and-export. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into deploy-and-export unless the human explicitly redirects the landing branch.
+base_branch: 004-config-export-import-WP01
+base_commit: 28f82cdddd8a7bd99db95002566392b3872a78d1
+created_at: '2026-04-15T08:48:56.260495+00:00'
 subtasks:
 - T007
 - T008
@@ -26,7 +29,7 @@ subtasks:
 phase: Phase 2 - User-facing UI
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "60672"
 review_status: ''
 reviewed_by: ''
 history:
