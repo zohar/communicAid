@@ -1,16 +1,31 @@
-import { Home, ArrowLeft, ArrowRight, Settings } from 'lucide-react';
+import {
+  Home,
+  ArrowLeft,
+  ArrowRight,
+  Settings,
+  Keyboard as KeyboardIcon,
+} from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
+import { useTranslation } from '../hooks/useTranslation';
 
 interface HeaderProps {
   title: string;
   onBack?: () => void;
   onHome: () => void;
   onSettings: () => void;
+  onKeyboard: () => void;
 }
 
-export function Header({ title, onBack, onHome, onSettings }: HeaderProps) {
+export function Header({
+  title,
+  onBack,
+  onHome,
+  onSettings,
+  onKeyboard,
+}: HeaderProps) {
   const { isRTL } = useLanguage();
+  const { t } = useTranslation();
   const [currentTime, setCurrentTime] = useState(new Date());
   const BackIcon = isRTL ? ArrowRight : ArrowLeft;
 
@@ -50,6 +65,13 @@ export function Header({ title, onBack, onHome, onSettings }: HeaderProps) {
             className="bg-slate-700 hover:bg-slate-600 active:bg-slate-500 p-4 rounded-xl flex items-center justify-center transition-all shadow-md min-w-[70px] min-h-[70px]"
           >
             <Home size={32} />
+          </button>
+          <button
+            onClick={onKeyboard}
+            className="bg-slate-700 hover:bg-slate-600 active:bg-slate-500 p-4 rounded-xl flex items-center justify-center transition-all shadow-md min-w-[70px] min-h-[70px]"
+            aria-label={t('keyboard')}
+          >
+            <KeyboardIcon size={32} />
           </button>
         </div>
 

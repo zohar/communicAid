@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { lazy, Suspense, useState } from 'react';
 import { Header } from './components/Header';
 import { ActionBar } from './components/ActionBar';
 import { RecentItems } from './components/RecentItems';
@@ -10,6 +10,10 @@ import { Category, RecentItem } from './types';
 import { useLanguage } from './hooks/useLanguage';
 import { useTranslation } from './hooks/useTranslation';
 import { useQuickNames } from './hooks/useQuickNames';
+
+const KeyboardScreen = lazy(
+  () => import('./components/screens/KeyboardScreen'),
+);
 
 type NavigationState = {
   screen: 'home' | 'category' | 'config';
@@ -30,6 +34,10 @@ function App() {
   const { quickNames } = useQuickNames();
 
   const [selectedMessage, setSelectedMessage] = useState<string>('');
+
+  const [keyboardOpen, setKeyboardOpen] = useState<boolean>(false);
+  const handleKeyboard = () => setKeyboardOpen(true);
+  const handleKeyboardClose = () => setKeyboardOpen(false);
 
   const handleItemTap = (text: string, icon: string, entryId?: string) => {
     const newItem: RecentItem = {
@@ -107,6 +115,7 @@ function App() {
         onBack={navigation.breadcrumbIds.length > 1 ? handleBack : undefined}
         onHome={handleHome}
         onSettings={handleSettings}
+        onKeyboard={handleKeyboard}
       />
 
       {selectedMessage && (
@@ -138,6 +147,10 @@ function App() {
 
       <ActionBar quickNames={quickNames} onItemTap={handleItemTap} />
       <RecentItems items={recentItems} onItemTap={handleItemTap} />
+
+      <Suspense fallback={null}>
+        {keyboardOpen && <KeyboardScreen onClose={handleKeyboardClose} />}
+      </Suspense>
     </div>
   );
 }
