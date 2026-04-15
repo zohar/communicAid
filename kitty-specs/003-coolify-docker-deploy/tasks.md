@@ -28,12 +28,12 @@ description: "Work package task list for Coolify Docker Deploy"
 
 ### Included Subtasks
 
-- [ ] T001 Run the acceptance script on a clean checkout, capture the failure baseline (TEST_FIRST gate)
-- [ ] T002 [P] Write `.dockerignore` at repo root excluding node_modules, dist, .git, .env*, kitty-specs, .kittify, .worktrees, communicAid-v2, communicAid.pen, editor metadata
-- [ ] T003 [P] Write `nginx.conf` at repo root: listen 80, gzip on, `/health` location returns `200 "ok"`, `try_files $uri $uri/ /index.html` SPA fallback, cache headers (immutable for `/assets/`, no-cache for `index.html`)
-- [ ] T004 Write multi-stage `Dockerfile` at repo root: `node:20-alpine` build stage runs `npm ci && npm run build`; `nginx:alpine` runtime stage copies `dist/` to `/usr/share/nginx/html` and `nginx.conf` to `/etc/nginx/conf.d/default.conf`; `EXPOSE 80`
-- [ ] T005 Run the full acceptance script end-to-end; all 10 steps green
-- [ ] T006 Security & secret review: confirm no secrets in any image layer, image size <100 MB, `.dockerignore` actually excludes sensitive directories, no env vars introduced
+- [x] T001 Run the acceptance script on a clean checkout, capture the failure baseline (TEST_FIRST gate)
+- [x] T002 [P] Write `.dockerignore` at repo root excluding node_modules, dist, .git, .env*, kitty-specs, .kittify, .worktrees, communicAid-v2, communicAid.pen, editor metadata
+- [x] T003 [P] Write `nginx.conf` at repo root: listen 80, gzip on, `/health` location returns `200 "ok"`, `try_files $uri $uri/ /index.html` SPA fallback, cache headers (immutable for `/assets/`, no-cache for `index.html`)
+- [x] T004 Write multi-stage `Dockerfile` at repo root: `node:20-alpine` build stage runs `npm ci && npm run build`; `nginx:alpine` runtime stage copies `dist/` to `/usr/share/nginx/html` and `nginx.conf` to `/etc/nginx/conf.d/default.conf`; `EXPOSE 80`
+- [x] T005 Run the full acceptance script end-to-end; all 10 steps green
+- [x] T006 Security & secret review: confirm no secrets in any image layer, image size <100 MB, `.dockerignore` actually excludes sensitive directories, no env vars introduced
 
 ### Implementation Notes
 
