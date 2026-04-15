@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Pure I/O Module with Tests
-lane: "doing"
+lane: "for_review"
 dependencies: []
 requirement_refs:
 - FR-003
@@ -30,8 +30,8 @@ subtasks:
 - T006
 phase: Phase 1 - Pure logic foundation
 assignee: ''
-agent: "claude-opus-4-6"
-shell_pid: "50141"
+agent: claude-opus-4-6
+shell_pid: '50141'
 review_status: ''
 reviewed_by: ''
 history:
@@ -377,3 +377,4 @@ To change this work package's lane:
 
 **Implement command**: `spec-kitty implement WP01`
 - 2026-04-15T08:38:47Z – claude-opus-4-6 – shell_pid=50141 – lane=doing – Assigned agent via workflow command
+- 2026-04-15T08:46:40Z – claude-opus-4-6 – shell_pid=50141 – lane=for_review – 13 Vitest tests green, typecheck clean, lint clean, no new deps. TEST_FIRST observed: tests written first, failing, then implementation made them green.

@@ -135,3 +135,8 @@ Splitting this way keeps each WP independently reviewable and lets the test-firs
 | T009       | Export button on ConfigScreen | WP02 | P1 | No |
 | T010       | Import button + file picker + dialogs on ConfigScreen | WP02 | P1 | No |
 | T011       | Run quickstart.md smoke tests + typecheck + lint | WP02 | P1 | No |
+
+<!-- status-model:start -->
+## Canonical Status (Generated)
+- WP01: for_review
+<!-- status-model:end -->
