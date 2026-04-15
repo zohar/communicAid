@@ -16,6 +16,13 @@ export function useLanguage() {
   const setLanguage = useCallback((lang: Language) => {
     localStorage.setItem(STORAGE_KEY, lang);
     setLanguageState(lang);
+    window.dispatchEvent(new Event('communicaid-language-changed'));
+  }, []);
+
+  useEffect(() => {
+    const handler = () => setLanguageState(getStoredLanguage());
+    window.addEventListener('communicaid-language-changed', handler);
+    return () => window.removeEventListener('communicaid-language-changed', handler);
   }, []);
 
   useEffect(() => {

@@ -195,6 +195,12 @@ export const ar: TranslationDictionary = {
   'change-icon': 'تغيير الأيقونة',
   'quick-names': 'أسماء سريعة',
   'search-icons': 'بحث عن أيقونات...',
+  'backup': 'النسخ الاحتياطي',
+  'export-config': 'تصدير الإعدادات',
+  'import-config': 'استيراد الإعدادات',
+  'import-confirm': 'سيؤدي هذا إلى استبدال إعداداتك الحالية. هل تريد المتابعة؟',
+  'export-failed': 'تعذر تصدير الإعدادات',
+  'import-failed': 'تعذر استيراد الإعدادات',
 
   // Keyboard
   'keyboard': 'لوحة المفاتيح',

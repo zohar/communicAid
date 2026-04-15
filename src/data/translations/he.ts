@@ -195,6 +195,12 @@ export const he: TranslationDictionary = {
   'change-icon': 'שנה אייקון',
   'quick-names': 'שמות מהירים',
   'search-icons': 'חפש אייקונים...',
+  'backup': 'גיבוי',
+  'export-config': 'ייצוא הגדרות',
+  'import-config': 'ייבוא הגדרות',
+  'import-confirm': 'הפעולה תחליף את ההגדרות הקיימות. להמשיך?',
+  'export-failed': 'לא ניתן לייצא את ההגדרות',
+  'import-failed': 'לא ניתן לייבא את ההגדרות',
 
   // Keyboard
   'keyboard': 'מקלדת',

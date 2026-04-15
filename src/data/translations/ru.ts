@@ -193,6 +193,12 @@ export const ru: TranslationDictionary = {
   'change-icon': 'Сменить иконку',
   'quick-names': 'Быстрые имена',
   'search-icons': 'Поиск иконок...',
+  'backup': 'Резервное копирование',
+  'export-config': 'Экспорт настроек',
+  'import-config': 'Импорт настроек',
+  'import-confirm': 'Текущие настройки будут заменены. Продолжить?',
+  'export-failed': 'Не удалось экспортировать настройки',
+  'import-failed': 'Не удалось импортировать настройки',
 
   // Keyboard
   'keyboard': 'Клавиатура',

@@ -195,6 +195,12 @@ export const en: TranslationDictionary = {
   'change-icon': 'Change icon',
   'quick-names': 'Quick Names',
   'search-icons': 'Search icons...',
+  'backup': 'Backup',
+  'export-config': 'Export configuration',
+  'import-config': 'Import configuration',
+  'import-confirm': 'This will replace your current configuration. Continue?',
+  'export-failed': 'Could not export configuration',
+  'import-failed': 'Could not import configuration',
 
   // Keyboard
   'keyboard': 'Keyboard',

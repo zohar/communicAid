@@ -1,4 +1,4 @@
-import { useState, useCallback } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { CustomOverride } from '../types';
 import { useLanguage } from './useLanguage';
 import { categories } from '../data/categories';
@@ -22,6 +22,12 @@ function saveAllOverrides(overrides: Record<string, CustomOverride>) {
 export function useOverrides(categoryId: string) {
   const { language } = useLanguage();
   const [overrides, setOverrides] = useState<Record<string, CustomOverride>>(getAllOverrides);
+
+  useEffect(() => {
+    const handler = () => setOverrides(getAllOverrides());
+    window.addEventListener('communicaid-overrides-changed', handler);
+    return () => window.removeEventListener('communicaid-overrides-changed', handler);
+  }, []);
 
   const setOverride = useCallback((entryId: string, patch: { text?: string; icon?: string }) => {
     setOverrides(prev => {

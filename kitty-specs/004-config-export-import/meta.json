@@ -2,7 +2,9 @@
   "created_at": "2026-04-15T08:23:55.194211+00:00",
   "feature_number": "004",
   "feature_slug": "004-config-export-import",
-  "friendly_name": "config export import",
+  "friendly_name": "Config Export & Import",
+  "source_description": "Add Export and Import buttons on ConfigScreen so users can download all their customizations (text/icon overrides, quick names, language) as a JSON file and restore them later or on another device. Replace-on-import. No versioning, no history.",
+  "vcs": "git",
   "mission": "software-dev",
   "slug": "004-config-export-import",
   "target_branch": "deploy-and-export"
