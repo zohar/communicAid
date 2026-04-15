@@ -28,7 +28,7 @@ subtasks:
 - T028
 phase: Phase 4 - Polish & Verification
 assignee: ''
-agent: ''
+agent: "claude-opus-4-6"
 shell_pid: "33202"
 review_status: ''
 reviewed_by: ''
@@ -215,3 +215,4 @@ The reviewer for WP06 must verify:
 ## Activity Log
 
 - 2026-04-14T14:01:38Z – system – lane=planned – Prompt created.
+- 2026-04-15T07:08:07Z – claude-opus-4-6 – shell_pid=33202 – lane=doing – Assigned agent via workflow command
