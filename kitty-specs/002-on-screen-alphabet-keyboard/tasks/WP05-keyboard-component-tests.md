@@ -1,7 +1,7 @@
 ---
 work_package_id: WP05
 title: KeyboardScreen Component Tests
-lane: planned
+lane: "doing"
 dependencies: [WP04]
 requirement_refs:
 - C-003
@@ -27,6 +27,9 @@ requirement_refs:
 planning_base_branch: keyboard
 merge_target_branch: keyboard
 branch_strategy: Planning artifacts for this feature were generated on keyboard. During /spec-kitty.implement this WP may branch from a dependency-specific base, but completed changes must merge back into keyboard unless the human explicitly redirects the landing branch.
+base_branch: 002-on-screen-alphabet-keyboard-WP04
+base_commit: d20f7a978a2495d049f1e14609f18f03f68c44cb
+created_at: '2026-04-15T07:04:35.026285+00:00'
 subtasks:
 - T019
 - T020
@@ -36,7 +39,7 @@ subtasks:
 phase: Phase 3 - Tests
 assignee: ''
 agent: ''
-shell_pid: ''
+shell_pid: "31555"
 review_status: ''
 reviewed_by: ''
 review_feedback: ''
