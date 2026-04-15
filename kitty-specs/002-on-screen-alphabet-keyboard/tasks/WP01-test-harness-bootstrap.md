@@ -1,7 +1,7 @@
 ---
 work_package_id: WP01
 title: Test Harness Bootstrap
-lane: "approved"
+lane: "done"
 dependencies: []
 requirement_refs:
 - NFR-005
@@ -215,3 +215,4 @@ The reviewer for WP01 must verify:
 - 2026-04-15T07:15:30Z – claude-opus-4-6 – shell_pid=35450 – lane=doing – Started review via workflow command
 - 2026-04-15T07:24:40Z – claude-opus-4-6 – shell_pid=35450 – lane=planned – Moved to planned
 - 2026-04-15T07:25:47Z – claude-opus-4-6 – shell_pid=35450 – lane=approved – User directed to skip review cycle and merge. Findings recorded in feedback pointer as post-merge cleanup: (1) add esbuild.jsx='automatic' to vitest.config.ts so WP05 test files can drop import React workaround, (2) update CLAUDE.md scripts, (3) add engines >=20.19 to package.json, (4) add vitest.config.ts to tsconfig.node.json. None are user-visible or block functionality.
+- 2026-04-15T07:29:52Z – claude-opus-4-6 – shell_pid=35450 – lane=done – Merged into keyboard via merge commit a82fa8d. --force because the WP01 worktree branch is behind keyboard post-merge; the implementation commits are already reachable from keyboard. Review findings deferred as post-merge cleanup per user direction.
