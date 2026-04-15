@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-04-15T08:23:55.194211+00:00",
+  "feature_number": "004",
+  "feature_slug": "004-config-export-import",
+  "friendly_name": "config export import",
+  "mission": "software-dev",
+  "slug": "004-config-export-import",
+  "target_branch": "deploy-and-export"
+}
