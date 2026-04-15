@@ -35,7 +35,7 @@ subtasks:
 - T006
 phase: Phase 1 - Deploy enablement
 assignee: ''
-agent: ''
+agent: "claude-opus-4-6"
 shell_pid: "44939"
 review_status: ''
 reviewed_by: ''
@@ -439,3 +439,4 @@ To change this work package's lane:
 **Valid lanes**: `planned`, `doing`, `for_review`, `done`
 
 **Implement command**: `spec-kitty implement WP01`
+- 2026-04-15T08:03:44Z – claude-opus-4-6 – shell_pid=44939 – lane=doing – Assigned agent via workflow command
