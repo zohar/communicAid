@@ -1,7 +1,5 @@
 # communicAid
 
-[![Open in Bolt](https://bolt.new/static/open-in-bolt.svg)](https://bolt.new/~/sb1-fd2yjl17)
-
 ## Overview
 
 communicAid is a tablet-first single-page application (SPA) designed to help post-surgery patients with temporary cognitive impairment communicate with their care team, caregivers, and family. The app enables simple, low-effort communication for patients who are unable to speak or are cognitively slowed by sedatives.
